@@ -1,0 +1,1847 @@
+{
+  "battery": {
+    "current": 0.0, 
+    "current_output": 1.6, 
+    "est_soc": 99.43, 
+    "frequency": 51.5, 
+    "max_temp": 26.7, 
+    "meas_soc": 73.0, 
+    "pactive": 0.0, 
+    "preactive": -0.3, 
+    "soc_data": [
+      {
+        "estimated": 99.42, 
+        "measured": 71.5, 
+        "timestamp": "2022-06-30 09:00:01"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 71.6, 
+        "timestamp": "2022-06-30 09:01:01"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 71.6, 
+        "timestamp": "2022-06-30 09:02:02"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 71.6, 
+        "timestamp": "2022-06-30 09:03:02"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 71.7, 
+        "timestamp": "2022-06-30 09:04:02"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 71.7, 
+        "timestamp": "2022-06-30 09:05:01"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 71.8, 
+        "timestamp": "2022-06-30 09:06:01"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 71.8, 
+        "timestamp": "2022-06-30 09:07:01"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 71.9, 
+        "timestamp": "2022-06-30 09:08:01"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 71.9, 
+        "timestamp": "2022-06-30 09:09:02"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 71.9, 
+        "timestamp": "2022-06-30 09:10:02"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 72.0, 
+        "timestamp": "2022-06-30 09:11:02"
+      }, 
+      {
+        "estimated": 99.34, 
+        "measured": 72.0, 
+        "timestamp": "2022-06-30 09:12:02"
+      }, 
+      {
+        "estimated": 99.41, 
+        "measured": 72.0, 
+        "timestamp": "2022-06-30 09:13:01"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 72.1, 
+        "timestamp": "2022-06-30 09:14:01"
+      }, 
+      {
+        "estimated": 99.41, 
+        "measured": 72.1, 
+        "timestamp": "2022-06-30 09:15:01"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 72.1, 
+        "timestamp": "2022-06-30 09:16:02"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 72.2, 
+        "timestamp": "2022-06-30 09:17:02"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 72.2, 
+        "timestamp": "2022-06-30 09:18:02"
+      }, 
+      {
+        "estimated": 99.41, 
+        "measured": 72.2, 
+        "timestamp": "2022-06-30 09:19:01"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 72.3, 
+        "timestamp": "2022-06-30 09:20:01"
+      }, 
+      {
+        "estimated": 99.41, 
+        "measured": 72.3, 
+        "timestamp": "2022-06-30 09:21:01"
+      }, 
+      {
+        "estimated": 99.41, 
+        "measured": 72.3, 
+        "timestamp": "2022-06-30 09:22:01"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 72.4, 
+        "timestamp": "2022-06-30 09:23:02"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 72.4, 
+        "timestamp": "2022-06-30 09:24:02"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 72.4, 
+        "timestamp": "2022-06-30 09:25:02"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 72.5, 
+        "timestamp": "2022-06-30 09:26:01"
+      }, 
+      {
+        "estimated": 99.41, 
+        "measured": 72.5, 
+        "timestamp": "2022-06-30 09:27:01"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 72.5, 
+        "timestamp": "2022-06-30 09:28:01"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 72.6, 
+        "timestamp": "2022-06-30 09:29:02"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 72.6, 
+        "timestamp": "2022-06-30 09:30:02"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 72.6, 
+        "timestamp": "2022-06-30 09:31:02"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 72.6, 
+        "timestamp": "2022-06-30 09:32:02"
+      }, 
+      {
+        "estimated": 99.41, 
+        "measured": 72.7, 
+        "timestamp": "2022-06-30 09:33:01"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 72.7, 
+        "timestamp": "2022-06-30 09:34:01"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 72.7, 
+        "timestamp": "2022-06-30 09:35:02"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 72.8, 
+        "timestamp": "2022-06-30 09:36:02"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 72.8, 
+        "timestamp": "2022-06-30 09:37:02"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 72.8, 
+        "timestamp": "2022-06-30 09:38:02"
+      }, 
+      {
+        "estimated": 99.41, 
+        "measured": 72.8, 
+        "timestamp": "2022-06-30 09:39:01"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 72.9, 
+        "timestamp": "2022-06-30 09:40:01"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 72.9, 
+        "timestamp": "2022-06-30 09:41:01"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 72.9, 
+        "timestamp": "2022-06-30 09:42:01"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 72.9, 
+        "timestamp": "2022-06-30 09:43:02"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 09:44:02"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 09:45:01"
+      }, 
+      {
+        "estimated": 99.34, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 09:46:01"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 09:47:01"
+      }, 
+      {
+        "estimated": 99.41, 
+        "measured": 73.1, 
+        "timestamp": "2022-06-30 09:48:01"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 73.1, 
+        "timestamp": "2022-06-30 09:49:02"
+      }, 
+      {
+        "estimated": 99.37, 
+        "measured": 73.1, 
+        "timestamp": "2022-06-30 09:50:02"
+      }, 
+      {
+        "estimated": 99.32, 
+        "measured": 73.1, 
+        "timestamp": "2022-06-30 09:51:01"
+      }, 
+      {
+        "estimated": 99.35, 
+        "measured": 73.1, 
+        "timestamp": "2022-06-30 09:52:01"
+      }, 
+      {
+        "estimated": 99.48, 
+        "measured": 73.1, 
+        "timestamp": "2022-06-30 09:53:01"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.1, 
+        "timestamp": "2022-06-30 09:54:01"
+      }, 
+      {
+        "estimated": 99.36, 
+        "measured": 73.1, 
+        "timestamp": "2022-06-30 09:55:02"
+      }, 
+      {
+        "estimated": 99.37, 
+        "measured": 73.1, 
+        "timestamp": "2022-06-30 09:56:02"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.1, 
+        "timestamp": "2022-06-30 09:57:02"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.1, 
+        "timestamp": "2022-06-30 09:58:01"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.1, 
+        "timestamp": "2022-06-30 09:59:01"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.1, 
+        "timestamp": "2022-06-30 10:00:01"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.1, 
+        "timestamp": "2022-06-30 10:01:01"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:02:02"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:03:02"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:04:02"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:05:01"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:06:01"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:07:01"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:08:02"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:09:02"
+      }, 
+      {
+        "estimated": 99.46, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:10:02"
+      }, 
+      {
+        "estimated": 99.36, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:11:01"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:12:01"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:13:01"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:14:01"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:15:02"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:16:02"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:17:02"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:18:01"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:19:01"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:20:01"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:21:01"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:22:02"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:23:02"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:24:02"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:25:01"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:26:01"
+      }, 
+      {
+        "estimated": 99.38, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:27:01"
+      }, 
+      {
+        "estimated": 99.33, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:28:02"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:29:02"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:30:02"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:31:02"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:32:01"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:33:01"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:34:01"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:35:02"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:36:02"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:37:02"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:38:02"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:39:01"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:40:01"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:41:01"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:42:02"
+      }, 
+      {
+        "estimated": 99.42, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:43:02"
+      }, 
+      {
+        "estimated": 99.32, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:44:02"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:45:01"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:46:01"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:47:01"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:48:01"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:49:02"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:50:02"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:51:02"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:52:01"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:53:01"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:54:01"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:55:01"
+      }, 
+      {
+        "estimated": 99.4, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:56:02"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:57:02"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:58:02"
+      }, 
+      {
+        "estimated": 99.43, 
+        "measured": 73.0, 
+        "timestamp": "2022-06-30 10:59:01"
+      }
+    ], 
+    "total_voltage": 52.1, 
+    "volt_output": 229.9
+  }, 
+  "grid": {
+    "current": 0.3, 
+    "frequency": 50.0, 
+    "pactive": 0.0, 
+    "preactive": 0.0, 
+    "voltage": 231.0
+  }, 
+  "load": {
+    "current": 1.0, 
+    "electricity_load": [
+      {
+        "estimated": 0.51, 
+        "measured": 0.54, 
+        "timestamp": "2022-06-30 09:00:01"
+      }, 
+      {
+        "estimated": 0.51, 
+        "measured": 0.55, 
+        "timestamp": "2022-06-30 09:01:01"
+      }, 
+      {
+        "estimated": 0.51, 
+        "measured": 0.57, 
+        "timestamp": "2022-06-30 09:02:01"
+      }, 
+      {
+        "estimated": 0.51, 
+        "measured": 0.54, 
+        "timestamp": "2022-06-30 09:03:02"
+      }, 
+      {
+        "estimated": 0.51, 
+        "measured": 0.57, 
+        "timestamp": "2022-06-30 09:04:02"
+      }, 
+      {
+        "estimated": 0.51, 
+        "measured": 0.54, 
+        "timestamp": "2022-06-30 09:05:01"
+      }, 
+      {
+        "estimated": 0.51, 
+        "measured": 0.56, 
+        "timestamp": "2022-06-30 09:06:01"
+      }, 
+      {
+        "estimated": 0.51, 
+        "measured": 0.57, 
+        "timestamp": "2022-06-30 09:07:01"
+      }, 
+      {
+        "estimated": 0.51, 
+        "measured": 0.58, 
+        "timestamp": "2022-06-30 09:08:01"
+      }, 
+      {
+        "estimated": 0.51, 
+        "measured": 0.58, 
+        "timestamp": "2022-06-30 09:09:01"
+      }, 
+      {
+        "estimated": 0.51, 
+        "measured": 0.61, 
+        "timestamp": "2022-06-30 09:10:01"
+      }, 
+      {
+        "estimated": 0.51, 
+        "measured": 0.58, 
+        "timestamp": "2022-06-30 09:11:02"
+      }, 
+      {
+        "estimated": 0.51, 
+        "measured": 0.94, 
+        "timestamp": "2022-06-30 09:12:02"
+      }, 
+      {
+        "estimated": 0.51, 
+        "measured": 0.54, 
+        "timestamp": "2022-06-30 09:13:01"
+      }, 
+      {
+        "estimated": 0.51, 
+        "measured": 0.57, 
+        "timestamp": "2022-06-30 09:14:01"
+      }, 
+      {
+        "estimated": 0.51, 
+        "measured": 0.58, 
+        "timestamp": "2022-06-30 09:15:01"
+      }, 
+      {
+        "estimated": 0.51, 
+        "measured": 0.58, 
+        "timestamp": "2022-06-30 09:16:01"
+      }, 
+      {
+        "estimated": 0.52, 
+        "measured": 0.58, 
+        "timestamp": "2022-06-30 09:17:02"
+      }, 
+      {
+        "estimated": 0.52, 
+        "measured": 0.57, 
+        "timestamp": "2022-06-30 09:18:02"
+      }, 
+      {
+        "estimated": 0.52, 
+        "measured": 0.54, 
+        "timestamp": "2022-06-30 09:19:01"
+      }, 
+      {
+        "estimated": 0.52, 
+        "measured": 0.56, 
+        "timestamp": "2022-06-30 09:20:01"
+      }, 
+      {
+        "estimated": 0.51, 
+        "measured": 0.58, 
+        "timestamp": "2022-06-30 09:21:01"
+      }, 
+      {
+        "estimated": 0.51, 
+        "measured": 0.56, 
+        "timestamp": "2022-06-30 09:22:01"
+      }, 
+      {
+        "estimated": 0.51, 
+        "measured": 0.61, 
+        "timestamp": "2022-06-30 09:23:01"
+      }, 
+      {
+        "estimated": 0.51, 
+        "measured": 0.61, 
+        "timestamp": "2022-06-30 09:24:02"
+      }, 
+      {
+        "estimated": 0.51, 
+        "measured": 0.63, 
+        "timestamp": "2022-06-30 09:25:02"
+      }, 
+      {
+        "estimated": 0.51, 
+        "measured": 0.59, 
+        "timestamp": "2022-06-30 09:26:01"
+      }, 
+      {
+        "estimated": 0.52, 
+        "measured": 1.0, 
+        "timestamp": "2022-06-30 09:27:01"
+      }, 
+      {
+        "estimated": 0.56, 
+        "measured": 0.63, 
+        "timestamp": "2022-06-30 09:28:01"
+      }, 
+      {
+        "estimated": 0.58, 
+        "measured": 0.61, 
+        "timestamp": "2022-06-30 09:29:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.63, 
+        "timestamp": "2022-06-30 09:30:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.96, 
+        "timestamp": "2022-06-30 09:31:02"
+      }, 
+      {
+        "estimated": 0.61, 
+        "measured": 0.98, 
+        "timestamp": "2022-06-30 09:32:02"
+      }, 
+      {
+        "estimated": 0.62, 
+        "measured": 0.6, 
+        "timestamp": "2022-06-30 09:33:01"
+      }, 
+      {
+        "estimated": 0.63, 
+        "measured": 0.6, 
+        "timestamp": "2022-06-30 09:34:01"
+      }, 
+      {
+        "estimated": 0.63, 
+        "measured": 0.64, 
+        "timestamp": "2022-06-30 09:35:01"
+      }, 
+      {
+        "estimated": 0.63, 
+        "measured": 0.63, 
+        "timestamp": "2022-06-30 09:36:01"
+      }, 
+      {
+        "estimated": 0.57, 
+        "measured": 0.62, 
+        "timestamp": "2022-06-30 09:37:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.62, 
+        "timestamp": "2022-06-30 09:38:02"
+      }, 
+      {
+        "estimated": 0.62, 
+        "measured": 0.61, 
+        "timestamp": "2022-06-30 09:39:01"
+      }, 
+      {
+        "estimated": 0.63, 
+        "measured": 0.61, 
+        "timestamp": "2022-06-30 09:40:01"
+      }, 
+      {
+        "estimated": 0.63, 
+        "measured": 0.62, 
+        "timestamp": "2022-06-30 09:41:01"
+      }, 
+      {
+        "estimated": 0.63, 
+        "measured": 0.59, 
+        "timestamp": "2022-06-30 09:42:01"
+      }, 
+      {
+        "estimated": 0.61, 
+        "measured": 0.59, 
+        "timestamp": "2022-06-30 09:43:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.63, 
+        "timestamp": "2022-06-30 09:44:02"
+      }, 
+      {
+        "estimated": 0.54, 
+        "measured": 0.59, 
+        "timestamp": "2022-06-30 09:45:01"
+      }, 
+      {
+        "estimated": 0.54, 
+        "measured": 0.95, 
+        "timestamp": "2022-06-30 09:46:01"
+      }, 
+      {
+        "estimated": 0.54, 
+        "measured": 0.59, 
+        "timestamp": "2022-06-30 09:47:01"
+      }, 
+      {
+        "estimated": 0.54, 
+        "measured": 0.6, 
+        "timestamp": "2022-06-30 09:48:01"
+      }, 
+      {
+        "estimated": 0.54, 
+        "measured": 0.63, 
+        "timestamp": "2022-06-30 09:49:01"
+      }, 
+      {
+        "estimated": 0.54, 
+        "measured": 0.63, 
+        "timestamp": "2022-06-30 09:50:02"
+      }, 
+      {
+        "estimated": 0.56, 
+        "measured": 0.61, 
+        "timestamp": "2022-06-30 09:51:01"
+      }, 
+      {
+        "estimated": 0.56, 
+        "measured": 0.59, 
+        "timestamp": "2022-06-30 09:52:01"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 0.96, 
+        "timestamp": "2022-06-30 09:53:01"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 0.95, 
+        "timestamp": "2022-06-30 09:54:01"
+      }, 
+      {
+        "estimated": 0.54, 
+        "measured": 0.63, 
+        "timestamp": "2022-06-30 09:55:01"
+      }, 
+      {
+        "estimated": 0.54, 
+        "measured": 0.6, 
+        "timestamp": "2022-06-30 09:56:02"
+      }, 
+      {
+        "estimated": 0.54, 
+        "measured": 0.72, 
+        "timestamp": "2022-06-30 09:57:02"
+      }, 
+      {
+        "estimated": 0.54, 
+        "measured": 0.71, 
+        "timestamp": "2022-06-30 09:58:01"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 0.7, 
+        "timestamp": "2022-06-30 09:59:01"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 0.75, 
+        "timestamp": "2022-06-30 10:00:01"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 0.75, 
+        "timestamp": "2022-06-30 10:01:01"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 0.74, 
+        "timestamp": "2022-06-30 10:02:01"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 0.76, 
+        "timestamp": "2022-06-30 10:03:02"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 0.69, 
+        "timestamp": "2022-06-30 10:04:02"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 0.69, 
+        "timestamp": "2022-06-30 10:05:01"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 0.72, 
+        "timestamp": "2022-06-30 10:06:01"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 0.76, 
+        "timestamp": "2022-06-30 10:07:01"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 0.74, 
+        "timestamp": "2022-06-30 10:08:01"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 0.75, 
+        "timestamp": "2022-06-30 10:09:02"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 1.12, 
+        "timestamp": "2022-06-30 10:10:02"
+      }, 
+      {
+        "estimated": 0.56, 
+        "measured": 0.73, 
+        "timestamp": "2022-06-30 10:11:01"
+      }, 
+      {
+        "estimated": 0.57, 
+        "measured": 0.72, 
+        "timestamp": "2022-06-30 10:12:01"
+      }, 
+      {
+        "estimated": 0.58, 
+        "measured": 0.75, 
+        "timestamp": "2022-06-30 10:13:01"
+      }, 
+      {
+        "estimated": 0.58, 
+        "measured": 0.75, 
+        "timestamp": "2022-06-30 10:14:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.7, 
+        "timestamp": "2022-06-30 10:15:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.71, 
+        "timestamp": "2022-06-30 10:16:02"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.72, 
+        "timestamp": "2022-06-30 10:17:02"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.7, 
+        "timestamp": "2022-06-30 10:18:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.7, 
+        "timestamp": "2022-06-30 10:19:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.69, 
+        "timestamp": "2022-06-30 10:20:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.72, 
+        "timestamp": "2022-06-30 10:21:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.68, 
+        "timestamp": "2022-06-30 10:22:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.66, 
+        "timestamp": "2022-06-30 10:23:02"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.67, 
+        "timestamp": "2022-06-30 10:24:02"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.68, 
+        "timestamp": "2022-06-30 10:25:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.7, 
+        "timestamp": "2022-06-30 10:26:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 1.07, 
+        "timestamp": "2022-06-30 10:27:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.66, 
+        "timestamp": "2022-06-30 10:28:01"
+      }, 
+      {
+        "estimated": 0.6, 
+        "measured": 0.67, 
+        "timestamp": "2022-06-30 10:29:01"
+      }, 
+      {
+        "estimated": 0.6, 
+        "measured": 0.67, 
+        "timestamp": "2022-06-30 10:30:02"
+      }, 
+      {
+        "estimated": 0.6, 
+        "measured": 0.65, 
+        "timestamp": "2022-06-30 10:31:02"
+      }, 
+      {
+        "estimated": 0.6, 
+        "measured": 0.65, 
+        "timestamp": "2022-06-30 10:32:01"
+      }, 
+      {
+        "estimated": 0.6, 
+        "measured": 0.66, 
+        "timestamp": "2022-06-30 10:33:01"
+      }, 
+      {
+        "estimated": 0.6, 
+        "measured": 0.65, 
+        "timestamp": "2022-06-30 10:34:01"
+      }, 
+      {
+        "estimated": 0.6, 
+        "measured": 0.69, 
+        "timestamp": "2022-06-30 10:35:01"
+      }, 
+      {
+        "estimated": 0.6, 
+        "measured": 0.66, 
+        "timestamp": "2022-06-30 10:36:01"
+      }, 
+      {
+        "estimated": 0.6, 
+        "measured": 0.63, 
+        "timestamp": "2022-06-30 10:37:02"
+      }, 
+      {
+        "estimated": 0.6, 
+        "measured": 0.64, 
+        "timestamp": "2022-06-30 10:38:02"
+      }, 
+      {
+        "estimated": 0.6, 
+        "measured": 0.64, 
+        "timestamp": "2022-06-30 10:39:01"
+      }, 
+      {
+        "estimated": 0.6, 
+        "measured": 0.64, 
+        "timestamp": "2022-06-30 10:40:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.63, 
+        "timestamp": "2022-06-30 10:41:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.67, 
+        "timestamp": "2022-06-30 10:42:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.99, 
+        "timestamp": "2022-06-30 10:43:02"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.65, 
+        "timestamp": "2022-06-30 10:44:02"
+      }, 
+      {
+        "estimated": 0.6, 
+        "measured": 0.65, 
+        "timestamp": "2022-06-30 10:45:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.65, 
+        "timestamp": "2022-06-30 10:46:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.66, 
+        "timestamp": "2022-06-30 10:47:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.7, 
+        "timestamp": "2022-06-30 10:48:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.68, 
+        "timestamp": "2022-06-30 10:49:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.66, 
+        "timestamp": "2022-06-30 10:50:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.67, 
+        "timestamp": "2022-06-30 10:51:02"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.67, 
+        "timestamp": "2022-06-30 10:52:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.67, 
+        "timestamp": "2022-06-30 10:53:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.67, 
+        "timestamp": "2022-06-30 10:54:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.69, 
+        "timestamp": "2022-06-30 10:55:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.58, 
+        "timestamp": "2022-06-30 10:56:01"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.62, 
+        "timestamp": "2022-06-30 10:57:02"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.62, 
+        "timestamp": "2022-06-30 10:58:02"
+      }, 
+      {
+        "estimated": 0.59, 
+        "measured": 0.59, 
+        "timestamp": "2022-06-30 10:59:01"
+      }
+    ], 
+    "frequency": 51.56, 
+    "pf": 0.86, 
+    "voltage": 230.05
+  }, 
+  "pv": {
+    "frequency": 51.55, 
+    "iac": 2.85, 
+    "idc": 0.8, 
+    "pac": 0.62, 
+    "pv_production": [
+      {
+        "estimated": 0.58, 
+        "measured": 0.81, 
+        "timestamp": "2022-06-30 09:00:01"
+      }, 
+      {
+        "estimated": 0.57, 
+        "measured": 0.83, 
+        "timestamp": "2022-06-30 09:01:01"
+      }, 
+      {
+        "estimated": 0.57, 
+        "measured": 0.81, 
+        "timestamp": "2022-06-30 09:02:01"
+      }, 
+      {
+        "estimated": 0.57, 
+        "measured": 0.81, 
+        "timestamp": "2022-06-30 09:03:02"
+      }, 
+      {
+        "estimated": 0.56, 
+        "measured": 0.81, 
+        "timestamp": "2022-06-30 09:04:02"
+      }, 
+      {
+        "estimated": 0.56, 
+        "measured": 0.81, 
+        "timestamp": "2022-06-30 09:05:01"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 0.8, 
+        "timestamp": "2022-06-30 09:06:01"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 0.8, 
+        "timestamp": "2022-06-30 09:07:01"
+      }, 
+      {
+        "estimated": 0.56, 
+        "measured": 0.8, 
+        "timestamp": "2022-06-30 09:08:01"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 0.79, 
+        "timestamp": "2022-06-30 09:09:01"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 0.82, 
+        "timestamp": "2022-06-30 09:10:02"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 0.81, 
+        "timestamp": "2022-06-30 09:11:02"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 1.19, 
+        "timestamp": "2022-06-30 09:12:02"
+      }, 
+      {
+        "estimated": 0.56, 
+        "measured": 0.79, 
+        "timestamp": "2022-06-30 09:13:01"
+      }, 
+      {
+        "estimated": 0.56, 
+        "measured": 0.79, 
+        "timestamp": "2022-06-30 09:14:01"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 0.79, 
+        "timestamp": "2022-06-30 09:15:01"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 0.78, 
+        "timestamp": "2022-06-30 09:16:01"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 0.77, 
+        "timestamp": "2022-06-30 09:17:02"
+      }, 
+      {
+        "estimated": 0.54, 
+        "measured": 0.77, 
+        "timestamp": "2022-06-30 09:18:02"
+      }, 
+      {
+        "estimated": 0.54, 
+        "measured": 0.77, 
+        "timestamp": "2022-06-30 09:19:01"
+      }, 
+      {
+        "estimated": 0.54, 
+        "measured": 0.77, 
+        "timestamp": "2022-06-30 09:20:01"
+      }, 
+      {
+        "estimated": 0.54, 
+        "measured": 0.77, 
+        "timestamp": "2022-06-30 09:21:01"
+      }, 
+      {
+        "estimated": 0.53, 
+        "measured": 0.78, 
+        "timestamp": "2022-06-30 09:22:01"
+      }, 
+      {
+        "estimated": 0.53, 
+        "measured": 0.8, 
+        "timestamp": "2022-06-30 09:23:01"
+      }, 
+      {
+        "estimated": 0.52, 
+        "measured": 0.79, 
+        "timestamp": "2022-06-30 09:24:02"
+      }, 
+      {
+        "estimated": 0.55, 
+        "measured": 0.82, 
+        "timestamp": "2022-06-30 09:25:02"
+      }, 
+      {
+        "estimated": 0.58, 
+        "measured": 0.8, 
+        "timestamp": "2022-06-30 09:26:01"
+      }, 
+      {
+        "estimated": 0.64, 
+        "measured": 1.19, 
+        "timestamp": "2022-06-30 09:27:01"
+      }, 
+      {
+        "estimated": 0.7, 
+        "measured": 0.84, 
+        "timestamp": "2022-06-30 09:28:01"
+      }, 
+      {
+        "estimated": 0.77, 
+        "measured": 0.81, 
+        "timestamp": "2022-06-30 09:29:01"
+      }, 
+      {
+        "estimated": 0.96, 
+        "measured": 0.79, 
+        "timestamp": "2022-06-30 09:30:01"
+      }, 
+      {
+        "estimated": 1.2, 
+        "measured": 1.13, 
+        "timestamp": "2022-06-30 09:31:02"
+      }, 
+      {
+        "estimated": 1.37, 
+        "measured": 1.16, 
+        "timestamp": "2022-06-30 09:32:02"
+      }, 
+      {
+        "estimated": 1.56, 
+        "measured": 0.79, 
+        "timestamp": "2022-06-30 09:33:01"
+      }, 
+      {
+        "estimated": 1.73, 
+        "measured": 0.79, 
+        "timestamp": "2022-06-30 09:34:01"
+      }, 
+      {
+        "estimated": 1.96, 
+        "measured": 0.79, 
+        "timestamp": "2022-06-30 09:35:01"
+      }, 
+      {
+        "estimated": 2.19, 
+        "measured": 0.78, 
+        "timestamp": "2022-06-30 09:36:01"
+      }, 
+      {
+        "estimated": 2.47, 
+        "measured": 0.78, 
+        "timestamp": "2022-06-30 09:37:02"
+      }, 
+      {
+        "estimated": 2.47, 
+        "measured": 0.78, 
+        "timestamp": "2022-06-30 09:38:02"
+      }, 
+      {
+        "estimated": 2.47, 
+        "measured": 0.78, 
+        "timestamp": "2022-06-30 09:39:01"
+      }, 
+      {
+        "estimated": 2.46, 
+        "measured": 0.78, 
+        "timestamp": "2022-06-30 09:40:01"
+      }, 
+      {
+        "estimated": 2.46, 
+        "measured": 0.78, 
+        "timestamp": "2022-06-30 09:41:01"
+      }, 
+      {
+        "estimated": 2.46, 
+        "measured": 0.78, 
+        "timestamp": "2022-06-30 09:42:01"
+      }, 
+      {
+        "estimated": 2.46, 
+        "measured": 0.77, 
+        "timestamp": "2022-06-30 09:43:01"
+      }, 
+      {
+        "estimated": 2.45, 
+        "measured": 0.78, 
+        "timestamp": "2022-06-30 09:44:02"
+      }, 
+      {
+        "estimated": 2.45, 
+        "measured": 0.77, 
+        "timestamp": "2022-06-30 09:45:01"
+      }, 
+      {
+        "estimated": 2.45, 
+        "measured": 1.17, 
+        "timestamp": "2022-06-30 09:46:01"
+      }, 
+      {
+        "estimated": 2.45, 
+        "measured": 0.77, 
+        "timestamp": "2022-06-30 09:47:01"
+      }, 
+      {
+        "estimated": 2.44, 
+        "measured": 0.78, 
+        "timestamp": "2022-06-30 09:48:01"
+      }, 
+      {
+        "estimated": 2.44, 
+        "measured": 0.77, 
+        "timestamp": "2022-06-30 09:49:01"
+      }, 
+      {
+        "estimated": 2.44, 
+        "measured": 0.69, 
+        "timestamp": "2022-06-30 09:50:02"
+      }, 
+      {
+        "estimated": 2.43, 
+        "measured": 0.6, 
+        "timestamp": "2022-06-30 09:51:01"
+      }, 
+      {
+        "estimated": 2.43, 
+        "measured": 0.6, 
+        "timestamp": "2022-06-30 09:52:01"
+      }, 
+      {
+        "estimated": 2.43, 
+        "measured": 0.92, 
+        "timestamp": "2022-06-30 09:53:01"
+      }, 
+      {
+        "estimated": 2.43, 
+        "measured": 0.95, 
+        "timestamp": "2022-06-30 09:54:01"
+      }, 
+      {
+        "estimated": 2.42, 
+        "measured": 0.61, 
+        "timestamp": "2022-06-30 09:55:01"
+      }, 
+      {
+        "estimated": 2.42, 
+        "measured": 0.61, 
+        "timestamp": "2022-06-30 09:56:02"
+      }, 
+      {
+        "estimated": 2.42, 
+        "measured": 0.71, 
+        "timestamp": "2022-06-30 09:57:02"
+      }, 
+      {
+        "estimated": 2.42, 
+        "measured": 0.72, 
+        "timestamp": "2022-06-30 09:58:01"
+      }, 
+      {
+        "estimated": 2.41, 
+        "measured": 0.73, 
+        "timestamp": "2022-06-30 09:59:01"
+      }, 
+      {
+        "estimated": 2.41, 
+        "measured": 0.72, 
+        "timestamp": "2022-06-30 10:00:01"
+      }, 
+      {
+        "estimated": 2.41, 
+        "measured": 0.73, 
+        "timestamp": "2022-06-30 10:01:01"
+      }, 
+      {
+        "estimated": 2.41, 
+        "measured": 0.73, 
+        "timestamp": "2022-06-30 10:02:01"
+      }, 
+      {
+        "estimated": 2.4, 
+        "measured": 0.72, 
+        "timestamp": "2022-06-30 10:03:02"
+      }, 
+      {
+        "estimated": 2.17, 
+        "measured": 0.71, 
+        "timestamp": "2022-06-30 10:04:02"
+      }, 
+      {
+        "estimated": 2.02, 
+        "measured": 0.72, 
+        "timestamp": "2022-06-30 10:05:01"
+      }, 
+      {
+        "estimated": 1.87, 
+        "measured": 0.72, 
+        "timestamp": "2022-06-30 10:06:01"
+      }, 
+      {
+        "estimated": 1.85, 
+        "measured": 0.74, 
+        "timestamp": "2022-06-30 10:07:01"
+      }, 
+      {
+        "estimated": 1.88, 
+        "measured": 0.74, 
+        "timestamp": "2022-06-30 10:08:01"
+      }, 
+      {
+        "estimated": 1.97, 
+        "measured": 0.74, 
+        "timestamp": "2022-06-30 10:09:02"
+      }, 
+      {
+        "estimated": 2.09, 
+        "measured": 1.16, 
+        "timestamp": "2022-06-30 10:10:02"
+      }, 
+      {
+        "estimated": 2.25, 
+        "measured": 0.73, 
+        "timestamp": "2022-06-30 10:11:01"
+      }, 
+      {
+        "estimated": 2.38, 
+        "measured": 0.73, 
+        "timestamp": "2022-06-30 10:12:01"
+      }, 
+      {
+        "estimated": 2.38, 
+        "measured": 0.74, 
+        "timestamp": "2022-06-30 10:13:01"
+      }, 
+      {
+        "estimated": 2.38, 
+        "measured": 0.75, 
+        "timestamp": "2022-06-30 10:14:01"
+      }, 
+      {
+        "estimated": 2.37, 
+        "measured": 0.74, 
+        "timestamp": "2022-06-30 10:15:01"
+      }, 
+      {
+        "estimated": 2.37, 
+        "measured": 0.74, 
+        "timestamp": "2022-06-30 10:16:02"
+      }, 
+      {
+        "estimated": 2.37, 
+        "measured": 0.74, 
+        "timestamp": "2022-06-30 10:17:02"
+      }, 
+      {
+        "estimated": 2.36, 
+        "measured": 0.74, 
+        "timestamp": "2022-06-30 10:18:01"
+      }, 
+      {
+        "estimated": 2.36, 
+        "measured": 0.73, 
+        "timestamp": "2022-06-30 10:19:01"
+      }, 
+      {
+        "estimated": 2.36, 
+        "measured": 0.73, 
+        "timestamp": "2022-06-30 10:20:01"
+      }, 
+      {
+        "estimated": 2.36, 
+        "measured": 0.74, 
+        "timestamp": "2022-06-30 10:21:01"
+      }, 
+      {
+        "estimated": 2.36, 
+        "measured": 0.7, 
+        "timestamp": "2022-06-30 10:22:01"
+      }, 
+      {
+        "estimated": 2.36, 
+        "measured": 0.7, 
+        "timestamp": "2022-06-30 10:23:02"
+      }, 
+      {
+        "estimated": 2.36, 
+        "measured": 0.69, 
+        "timestamp": "2022-06-30 10:24:02"
+      }, 
+      {
+        "estimated": 2.36, 
+        "measured": 0.7, 
+        "timestamp": "2022-06-30 10:25:01"
+      }, 
+      {
+        "estimated": 2.36, 
+        "measured": 0.7, 
+        "timestamp": "2022-06-30 10:26:01"
+      }, 
+      {
+        "estimated": 2.36, 
+        "measured": 0.99, 
+        "timestamp": "2022-06-30 10:27:01"
+      }, 
+      {
+        "estimated": 2.36, 
+        "measured": 0.71, 
+        "timestamp": "2022-06-30 10:28:01"
+      }, 
+      {
+        "estimated": 2.36, 
+        "measured": 0.69, 
+        "timestamp": "2022-06-30 10:29:01"
+      }, 
+      {
+        "estimated": 2.41, 
+        "measured": 0.7, 
+        "timestamp": "2022-06-30 10:30:02"
+      }, 
+      {
+        "estimated": 2.49, 
+        "measured": 0.7, 
+        "timestamp": "2022-06-30 10:31:02"
+      }, 
+      {
+        "estimated": 2.49, 
+        "measured": 0.69, 
+        "timestamp": "2022-06-30 10:32:01"
+      }, 
+      {
+        "estimated": 2.48, 
+        "measured": 0.69, 
+        "timestamp": "2022-06-30 10:33:01"
+      }, 
+      {
+        "estimated": 2.48, 
+        "measured": 0.7, 
+        "timestamp": "2022-06-30 10:34:01"
+      }, 
+      {
+        "estimated": 2.48, 
+        "measured": 0.69, 
+        "timestamp": "2022-06-30 10:35:01"
+      }, 
+      {
+        "estimated": 2.48, 
+        "measured": 0.7, 
+        "timestamp": "2022-06-30 10:36:01"
+      }, 
+      {
+        "estimated": 2.47, 
+        "measured": 0.69, 
+        "timestamp": "2022-06-30 10:37:02"
+      }, 
+      {
+        "estimated": 2.47, 
+        "measured": 0.68, 
+        "timestamp": "2022-06-30 10:38:02"
+      }, 
+      {
+        "estimated": 2.47, 
+        "measured": 0.67, 
+        "timestamp": "2022-06-30 10:39:01"
+      }, 
+      {
+        "estimated": 2.47, 
+        "measured": 0.68, 
+        "timestamp": "2022-06-30 10:40:01"
+      }, 
+      {
+        "estimated": 2.46, 
+        "measured": 0.67, 
+        "timestamp": "2022-06-30 10:41:01"
+      }, 
+      {
+        "estimated": 2.46, 
+        "measured": 0.69, 
+        "timestamp": "2022-06-30 10:42:01"
+      }, 
+      {
+        "estimated": 2.46, 
+        "measured": 0.95, 
+        "timestamp": "2022-06-30 10:43:02"
+      }, 
+      {
+        "estimated": 2.45, 
+        "measured": 0.67, 
+        "timestamp": "2022-06-30 10:44:02"
+      }, 
+      {
+        "estimated": 2.45, 
+        "measured": 0.66, 
+        "timestamp": "2022-06-30 10:45:01"
+      }, 
+      {
+        "estimated": 2.45, 
+        "measured": 0.67, 
+        "timestamp": "2022-06-30 10:46:01"
+      }, 
+      {
+        "estimated": 2.45, 
+        "measured": 0.68, 
+        "timestamp": "2022-06-30 10:47:01"
+      }, 
+      {
+        "estimated": 2.44, 
+        "measured": 0.71, 
+        "timestamp": "2022-06-30 10:48:01"
+      }, 
+      {
+        "estimated": 2.44, 
+        "measured": 0.69, 
+        "timestamp": "2022-06-30 10:49:01"
+      }, 
+      {
+        "estimated": 2.44, 
+        "measured": 0.68, 
+        "timestamp": "2022-06-30 10:50:01"
+      }, 
+      {
+        "estimated": 2.44, 
+        "measured": 0.68, 
+        "timestamp": "2022-06-30 10:51:02"
+      }, 
+      {
+        "estimated": 2.43, 
+        "measured": 0.69, 
+        "timestamp": "2022-06-30 10:52:01"
+      }, 
+      {
+        "estimated": 2.43, 
+        "measured": 0.69, 
+        "timestamp": "2022-06-30 10:53:01"
+      }, 
+      {
+        "estimated": 2.43, 
+        "measured": 0.69, 
+        "timestamp": "2022-06-30 10:54:01"
+      }, 
+      {
+        "estimated": 2.43, 
+        "measured": 0.69, 
+        "timestamp": "2022-06-30 10:55:01"
+      }, 
+      {
+        "estimated": 2.42, 
+        "measured": 0.62, 
+        "timestamp": "2022-06-30 10:56:01"
+      }, 
+      {
+        "estimated": 2.42, 
+        "measured": 0.62, 
+        "timestamp": "2022-06-30 10:57:02"
+      }, 
+      {
+        "estimated": 2.42, 
+        "measured": 0.62, 
+        "timestamp": "2022-06-30 10:58:02"
+      }, 
+      {
+        "estimated": 2.42, 
+        "measured": 0.62, 
+        "timestamp": "2022-06-30 10:59:01"
+      }
+    ], 
+    "vac": 230.35, 
+    "vdc": 417.09
+  }, 
+  "weather_station": {
+    "humidity": 57.0, 
+    "irradiance": 691.0, 
+    "temperature": 27.2, 
+    "wind_speed": 0.0
+  }
+}
