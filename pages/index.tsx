@@ -41,9 +41,9 @@ const Home: NextPage = () => {
       {
         <main className="mx-10 mb-7">
           {data && (
-            <div class="grid grid-cols-3 gap-4">
-              <div class="left-column ">
-                <div class="grid grid-flow-col grid-rows-3 gap-4">
+            <div className="grid grid-cols-3 gap-4">
+              <div className="left-column ">
+                <div className="grid grid-flow-col grid-rows-3 gap-4">
                   <section className="h-100 flex flex-wrap">
                     <WeatherStation data={data.weather_station} />
                   </section>
@@ -58,8 +58,8 @@ const Home: NextPage = () => {
                 </div>
               </div>
 
-              <div class="center-column pt-10">
-                <div class="grid grid-flow-col grid-rows-3 gap-5">
+              <div className="center-column pt-10">
+                <div className="grid grid-flow-col grid-rows-3 gap-5">
                   <section className="flex flex-wrap">
                     <Pv data={data.pv} />
                   </section>
@@ -104,14 +104,14 @@ const Home: NextPage = () => {
                   showHead={false}
                 />
               </div>
-              <div class="right-culumn bg-blue-100">05</div>
+              <div className="right-culumn bg-blue-100">05</div>
             </div>
           )}
           {/* <br />
-<div class="grid grid-rows-3 grid-flow-col gap-4">
-  <div class="row-span-3 bg-blue-100">01</div>
-  <div class="col-span-2 bg-blue-100">02</div>
-  <div class="row-span-2 col-span-2 bg-blue-100">03</div>
+<div className="grid grid-rows-3 grid-flow-col gap-4">
+  <div className="row-span-3 bg-blue-100">01</div>
+  <div className="col-span-2 bg-blue-100">02</div>
+  <div className="row-span-2 col-span-2 bg-blue-100">03</div>
 </div> */}
         </main>
       }
