@@ -11,15 +11,15 @@ type WeatherStationProps = {
 
 function WeatherStation({ data }: WeatherStationProps) {
   return (
-    <div className="card-compact card w-72 bg-base-100 shadow-xl">
-            <div className="flex gap-4 p-2">
+    <div className="card-compact card w-auto h-max p-3 bg-base-100 shadow-xl">
+            <div className="flex gap-4">
               <div>
-              <div className="card w-24 bg-gradient-to-r from-cyan-500 to-sky-600 p-3">
-                <SunIcon className="text-slate-100" />
+              <div className="grid content-center place-content-center card w-24 h-full bg-gradient-to-tl from-[#FF9051] to-[#FBD560] p-3">
+                <SunIcon className="text-slate-100 w-16 h-auto" />
               </div>
               </div>
               <div>
-                <h1 className="font-bold text-sm text-blue-custom pb-1">Weather Station</h1>
+                <h1 className="font-bold text-sm text-blue-custom pb-1 text-center">Weather Station</h1>
                  <Detail data={data} label={weatherStationLabel} className="text-xs" />
               </div>
             </div>
