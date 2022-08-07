@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { LightningBoltIcon } from '@heroicons/react/outline'
 import { batteryLabel } from '../lib/variables'
 import Detail from './Detail'
+import BateraiImage from "../assets/baterai.png"
+
 
 type BatteryProps = {
   data: { [key: string]: number }
@@ -50,8 +52,9 @@ function Battery({ data }: BatteryProps) {
     //       </div>
     // </div>
 
-    <div className="card card-compact h-max w-full bg-base-100 p-3 shadow-xl">
-      <div className="flex justify-end gap-8">
+    //Ver 02
+    <div className="card card-main shadow-embross card-compact h-max w-auto p-3">
+      <div className="flex justify-start gap-4">
         <div>
           <div
             id="sec-battery"
@@ -61,38 +64,25 @@ function Battery({ data }: BatteryProps) {
           </div>
         </div>
         <div className="">
-          <h1 className="text-blue-custom pb-1 text-center text-sm font-bold">
+          <h1 className="card-title text-blue-custom pb-1 text-center text-sm font-bold">
             Bess
           </h1>
           <div className="flex w-full gap-2">
             <Detail
               data={{
-                total_voltage: data.total_voltage,
                 est_soc: data.est_soc,
-                meas_soc: data.meas_soc,
-                current: data.current,
-                max_temp: data.max_temp,
+                meas_soc: data.meas_soc
+                // current: data.current
               }}
               label={batteryLabel}
-              header="DC Side"
               className="items-start text-xs"
-            />
-            <Detail
-              data={{
-                volt_output: data.volt_output,
-                current_output: data.current_output,
-                frequency: data.frequency,
-                pactive: data.pactive,
-                preactive: data.preactive,
-              }}
-              label={batteryLabel}
-              header="AC Side"
-              className="items-end text-xs"
             />
           </div>
         </div>
       </div>
     </div>
+
+    // end ver 02
 
     // <div className="card card-compact h-max w-auto bg-base-100 p-3 shadow-xl">
     //   <div className="flex justify-end gap-8">
@@ -111,6 +101,45 @@ function Battery({ data }: BatteryProps) {
     //     </div>
     //   </div>
     // </div>
+
+
+
+    // ver 03
+
+  //   <div id="sec-battery" className="card card-main shadow-xl">
+  // <figure>
+  // <Image
+  //     src={BateraiImage}
+  //     layout="fill"
+  //   />
+  //   </figure>
+  // <div className="relative card-body gap-0.5 bg-gradient-to-r from-[rgba(0,0,0,0.8)] to-[rgba(0,0,0,0.1)] grid content-end text-xs">
+  //       <h2 className='card-title text-lg font-bold text-slate-100 uppercase mb-1'>BESS</h2>
+  //       <div className='grid content-end'>
+  //       <div className="flex justify-end">
+  //           <p className="justify-self-start">
+  //           <Detail
+  //           data={{
+  //             est_soc: data.est_soc,
+  //             meas_soc: data.meas_soc,
+  //           }}
+  //           label={batteryLabel}
+  //           className="text-xs text-white"
+  //         /></p>
+  //         <p className="justify-self-end">
+  //           <Detail
+  //           data={{
+  //             current: data.current,
+  //             }}
+  //             label={batteryLabel}
+  //             className="text-xs text-white"
+  //           /></p>
+  //       </div> 
+  //       </div>
+  // </div>
+  //   </div>
+
+    //end ver 03
   )
 }
 

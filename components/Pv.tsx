@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { DesktopComputerIcon } from '@heroicons/react/outline'
 import { pvLabel } from '../lib/variables'
 import Detail from './Detail'
+import PvImage from "../assets/pv.png"
+
 
 type PvProps = {
   data: { [key: string]: number }
@@ -43,20 +45,19 @@ function Pv({ data }: PvProps) {
     //     </div>
 
     // </div>
-    <div className="card-compact card w-auto h-max p-3 bg-base-100 shadow-xl">
-            <div className="flex gap-8 justify-end">
+
+    //ver 02
+    <div className="card-main card-compact card w-auto h-max p-3 shadow-embross">
+            <div className="flex gap-4 justify-start">
               <div>
                 <div id="sec-pv" className="grid content-center place-content-center card w-24 h-full bg-gradient-to-tl from-[#ff5e62] to-[#ff9966] p-3">
                    <DesktopComputerIcon className="text-slate-100 w-16 h-auto"/>
                 </div>
               </div>
               <div>
-                <h1 className="font-bold text-sm text-blue-custom pb-1 text-center">PV</h1>
+                <h1 className="card-title font-bold text-sm text-blue-custom pb-1 text-center">PV</h1>
                 <Detail
-                    data={{vdc: data.vdc,
-                      idc: data.idc,
-                      vac: data.vac,
-                      iac: data.iac,
+                    data={{
                       frequency: data.frequency,
                       pac: data.pac}}
                     label={pvLabel}
@@ -66,6 +67,32 @@ function Pv({ data }: PvProps) {
               
             </div>
           </div>
+          //end ver 02
+          
+          // ver 03
+
+    // <div id="sec-pv" className="card card-main shadow-xl">
+    // <figure>
+    // <Image
+    //     src={PvImage}
+    //     layout="fill"
+    //   />
+    //   </figure>
+    // <div className="relative card-body gap-0.5 bg-gradient-to-r from-[rgba(0,0,0,0.8)] to-[rgba(0,0,0,0.1)] grid content-end text-xs">
+    //       <h2 className='card-title text-lg font-bold text-slate-100 uppercase mb-1'>PV</h2>
+    //       <p className="justify-start">
+    //       <Detail
+    //        data={{
+    //         frequency: data.frequency,
+    //         pac: data.pac
+    //        }}
+    //        label={pvLabel}
+    //        className="text-xs text-white"
+    //      /></p>
+    // </div>
+    //   </div>
+  
+      //end ver 03
   )
 }
 

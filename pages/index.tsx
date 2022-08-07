@@ -39,17 +39,16 @@ const Home: NextPage = () => {
       <Navbar />
 
       {
-        <main className="mx-10 mb-7">
+        <main className="main-content mx-10 mb-7">
           {data && (
             <div className="grid grid-cols-3 gap-4">
               <div className="left-column ">
                 <div className="grid grid-flow-col grid-rows-3 gap-4">
                   <section className="h-100 flex flex-wrap">
-                    <WeatherStation data={data.weather_station} />
-                  </section>
-                  <section className="row-span-2 flex flex-wrap justify-center">
                     <Grid data={data.grid} />
-
+                  </section>
+                  <section className="row-span-2 flex flex-wrap">
+                    <WeatherStation data={data.weather_station} />
                     {/* <div
                       id="sec-between"
                       className="h-10 w-10 bg-red-800"
@@ -58,22 +57,28 @@ const Home: NextPage = () => {
                 </div>
               </div>
 
-              <div className="center-column pt-10">
+              <div className="center-column">
                 <div className="grid grid-flow-col grid-rows-3 gap-5">
-                  <section className="flex flex-wrap">
-                    <Pv data={data.pv} />
-                  </section>
-                  <section className="flex flex-wrap">
+                  <section className="flex flex-wrap justify-start">
                     <Battery data={data.battery} />
                   </section>
-                  <section className="flex flex-wrap">
+                  <div className="flex justify-between">
+                    <div className="flex justify-center">
+                      <div id="sec-between" className='bg-red-900 w-10 h-10 text-center'></div>
+                    </div>
+                    <section className="">
+                      <Pv data={data.pv} />
+                    </section>
+
+                  </div>
+                  <section className="flex flex-wrap justify-start">
                     <Load data={data.load} />
                   </section>
                 </div>
                 <Xarrow
                   start="sec-grid"
-                  end="sec-battery-1"
-                  path="grid"
+                  end="sec-battery"
+                  path="straight"
                   strokeWidth={3}
                   color="rgba(28, 147, 255,0.3)"
                   dashness={{ animation: 0.5 }}
@@ -83,28 +88,42 @@ const Home: NextPage = () => {
                   tailShape="circle"
                 />
                 <Xarrow
-                  start="sec-battery"
-                  end="sec-pv"
-                  path="grid"
-                  strokeWidth={3}
-                  color="rgba(28, 147, 255,0.3)"
-                  dashness={{ animation: 0.5 }}
-                  showHead={true}
-                  showTail={true}
-                  headShape="circle"
-                  tailShape="circle"
-                />
-                <Xarrow
+                  id="sec-antara"
                   start="sec-battery"
                   end="sec-load"
-                  path="grid"
+                  path="straight"
+                  strokeWidth={3}
+                  color="rgba(28, 147, 255,0.3)"
+                  dashness={{ animation: 0.5 }}
+                  showHead={true}
+                  showTail={true}
+                  headShape="circle"
+                  tailShape="circle"
+                />
+                <Xarrow
+                  start="sec-antara"
+                  end="sec-pv"
+                  path="straight"
+                  strokeWidth={3}
+                  color="rgba(28, 147, 255,0.3)"
+                  dashness={{ animation: 0.5 }}
+                  showHead={true}
+                  showTail={true}
+                  headShape="circle"
+                  tailShape="circle"
+                />
+                {/* <Xarrow
+                  start="sec-between"
+                  end="sec-load"
+                  path="straight"
                   strokeWidth={3}
                   color="rgba(28, 147, 255,0.3)"
                   dashness={{ animation: 0.5 }}
                   showHead={false}
-                />
+                /> */}
               </div>
-              <div className="right-culumn bg-blue-100">05</div>
+              <div className="right-culumn bg-blue-100">
+              </div>
             </div>
           )}
           {/* <br />

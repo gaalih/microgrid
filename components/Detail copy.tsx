@@ -1,5 +1,4 @@
 import React from 'react'
-import Parse from 'html-react-parser';
 
 import { classNames, displayVariable } from '../lib/utils'
 import type { Label } from '../lib/variables'
@@ -15,7 +14,7 @@ function Detail({ data, label, header, className }: DetailProps) {
   return (
     <div
       className={classNames([
-        'space-y-0',
+        'grid grid-cols-[auto_auto] gap-x-2',
         className ?? '',
       ])}
     >
@@ -24,14 +23,15 @@ function Detail({ data, label, header, className }: DetailProps) {
       )}
       {Object.entries(data).map(([key, value], index) => (
         <React.Fragment key={index}>
-          <div>
-            <p className="card-label -mb-1.5 text-xs">{Parse(label[key].name.toString())}</p>
-            <h5 className="card-value text-xl font-bold">
-              {value.toString()}
-              {/* <span className="ml-1 text-xs" dangerouslySetInnerHTML={{ __html: label[key].unit }}></span> */}
-              <span className="card-unit ml-1 text-xs">{Parse(label[key].unit.toString())}</span>
-            </h5>
-          </div>
+          <div
+            dangerouslySetInnerHTML={{ __html: label[key].name }}
+            className="font-medium text-blue-custom"
+          />
+          <div
+            dangerouslySetInnerHTML={{
+              __html: displayVariable(value, label[key].unit),
+            }}
+          />
         </React.Fragment>
       ))}
     </div>

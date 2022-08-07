@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { WifiIcon } from '@heroicons/react/outline'
 import { gridLabel } from '../lib/variables'
 import Detail from './Detail'
+import SutetImage from "../assets/sutet.jpg"
 
 type GridProps = {
   data: { [key: string]: number }
@@ -10,6 +11,8 @@ type GridProps = {
 
 function Grid({ data }: GridProps) {
   return (
+    //end ver 01
+
     // <div>
     //     <div className="flex justify-center">
     //       <div id='sec-grid' className="card-compact card w-24 bg-base-100 shadow-xl">
@@ -34,8 +37,27 @@ function Grid({ data }: GridProps) {
     //         </div>
     //       </div>
     // </div>
-    <div className="card card-compact h-max w-auto bg-base-100 p-3 shadow-xl">
-      <div className="flex justify-end gap-8">
+
+    //end ver 01
+    
+    // ver 02
+
+    <div className="card card-main shadow-embross card-compact h-max w-auto p-3">
+      <div className="flex justify-start gap-4">
+      <div>
+        <h1 className="card-title text-blue-custom pb-1 text-center text-sm font-bold">
+          Grid
+        </h1>
+        {/* <Detail data={data} label={gridLabel} className="text-xs" /> */}
+        <Detail
+          data={{
+            pactive: data.pactive,
+            preactive: data.preactive
+          }}
+          label={gridLabel}
+          className="text-xs"
+        />
+      </div>
         <div>
           <div
             id="sec-grid"
@@ -44,14 +66,41 @@ function Grid({ data }: GridProps) {
             <WifiIcon className="h-auto w-16 text-slate-100" />
           </div>
         </div>
-        <div>
-          <h1 className="text-blue-custom pb-1 text-center text-sm font-bold">
-            Grid
-          </h1>
-          <Detail data={data} label={gridLabel} className="text-xs" />
-        </div>
       </div>
+      
+      
+
     </div>
+
+    // end ver02
+
+    // ver 03
+// <div className="card-utama card bg-[#ECF2F7] p-4">
+  //   <div id="sec-grid" className="card card-main shadow-md shadow-inner">
+  // <figure>
+  // <Image
+  //     src={SutetImage}
+  //     layout="fill"
+  //   />
+  //   </figure>
+  // <div className="relative card-body gap-0.5 bg-gradient-to-r from-[rgba(0,0,0,0.9)] to-[rgba(0,0,0,0.1)] grid content-end text-xs">
+  //       <h2 className='card-title text-lg font-bold text-slate-100 uppercase mb-1'>Grid</h2>
+  //       <p className="justify-start">
+  //       <Detail
+  //        data={{
+  //          pactive: data.pactive,
+  //          preactive: data.preactive
+  //        }}
+  //        label={gridLabel}
+  //        className="text-xs text-white"
+  //      /></p>
+  // </div>
+  //   </div>
+//</div>
+
+    //end ver 03
+
+    
   )
 }
 
