@@ -4,6 +4,7 @@ import { DesktopComputerIcon } from '@heroicons/react/outline'
 import { pvLabel } from '../lib/variables'
 import Detail from './Detail'
 import PvImage from "../assets/pv.png"
+import PvIcon from "../assets/pv.svg"
 
 
 type PvProps = {
@@ -47,11 +48,14 @@ function Pv({ data }: PvProps) {
     // </div>
 
     //ver 02
-    <div className="card-main card-compact card w-auto h-max p-3 shadow-embross">
+    <div id="sec-pv" className="card-main card-compact card w-auto h-max p-3 shadow-embross">
             <div className="flex gap-4 justify-start">
               <div>
-                <div id="sec-pv" className="grid content-center place-content-center card w-24 h-full bg-gradient-to-tl from-[#ff5e62] to-[#ff9966] p-3">
-                   <DesktopComputerIcon className="text-slate-100 w-16 h-auto"/>
+                <div className="grid content-center place-content-center card w-24 h-full bg-gradient-to-tl from-[#ff5e62] to-[#ff9966] p-3">
+                   {/* <DesktopComputerIcon className="text-slate-100 w-16 h-auto"/> */}
+                   <Image
+                      src={PvIcon}
+                    />
                 </div>
               </div>
               <div>

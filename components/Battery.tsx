@@ -4,6 +4,7 @@ import { LightningBoltIcon } from '@heroicons/react/outline'
 import { batteryLabel } from '../lib/variables'
 import Detail from './Detail'
 import BateraiImage from "../assets/baterai.png"
+import BatteryIcon from "../assets/battery.svg"
 
 
 type BatteryProps = {
@@ -53,14 +54,16 @@ function Battery({ data }: BatteryProps) {
     // </div>
 
     //Ver 02
-    <div className="card card-main shadow-embross card-compact h-max w-auto p-3">
+    <div id="sec-battery" className="card card-main shadow-embross card-compact h-max w-auto p-3">
       <div className="flex justify-start gap-4">
         <div>
           <div
-            id="sec-battery"
             className="card grid h-full w-24 place-content-center content-center bg-gradient-to-tl from-[#56CEBA] to-[#32CE75] p-3"
           >
-            <LightningBoltIcon className="h-auto w-16 text-slate-100" />
+            {/* <LightningBoltIcon className="h-auto w-16 text-slate-100" /> */}
+            <Image
+              src={BatteryIcon}
+            />
           </div>
         </div>
         <div className="">

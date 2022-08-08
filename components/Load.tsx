@@ -4,6 +4,7 @@ import { HomeIcon } from '@heroicons/react/outline'
 import { loadLabel } from '../lib/variables'
 import Detail from './Detail'
 import LoadImage from "../assets/load.png"
+import LoadIcon from "../assets/load.svg"
 
 type LoadProps = {
   data: { [key: string]: number }
@@ -40,11 +41,14 @@ function Load({ data }: LoadProps) {
     // </div>
 
     //ver 02
-    <div className="card-main card-compact card w-auto h-max p-3 shadow-embross">
+    <div id="sec-load" className="card-main card-compact card w-auto h-max p-3 shadow-embross">
             <div className="flex gap-4 justify-start">
               <div>
-                <div id="sec-load" className="grid content-center place-content-center card w-24 h-full bg-gradient-to-tl from-[#1B93FF] to-[#34C0FE] p-3">
-                   <HomeIcon className="text-slate-100 w-16 h-auto"/>
+                <div className="grid content-center place-content-center card w-24 h-full bg-gradient-to-tl from-[#1B93FF] to-[#34C0FE] p-3">
+                   {/* <HomeIcon className="text-slate-100 w-16 h-auto"/> */}
+                   <Image
+                      src={LoadIcon}
+                    />
                 </div>
               </div>
               <div>

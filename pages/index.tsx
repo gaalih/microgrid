@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 // import { SteppedLineTo } from 'react-lineto';
 import Xarrow from 'react-xarrows'
+import ApexCharts from 'apexcharts'
 
 import { useQuery } from 'react-query'
 import { useFetch } from 'usehooks-ts'
@@ -62,15 +63,9 @@ const Home: NextPage = () => {
                   <section className="flex flex-wrap justify-start">
                     <Battery data={data.battery} />
                   </section>
-                  <div className="flex justify-between">
-                    <div className="flex justify-center">
-                      <div id="sec-between" className='bg-red-900 w-10 h-10 text-center'></div>
-                    </div>
-                    <section className="">
-                      <Pv data={data.pv} />
-                    </section>
-
-                  </div>
+                  <section className="flex flex-wrap justify-end">
+                    <Pv data={data.pv} />
+                  </section>
                   <section className="flex flex-wrap justify-start">
                     <Load data={data.load} />
                   </section>
@@ -80,38 +75,52 @@ const Home: NextPage = () => {
                   end="sec-battery"
                   path="straight"
                   strokeWidth={3}
-                  color="rgba(28, 147, 255,0.3)"
-                  dashness={{ animation: 0.5 }}
-                  showHead={true}
-                  showTail={true}
-                  headShape="circle"
-                  tailShape="circle"
+                  color="#d1d1d1"
+                  // dashness={{ animation: 0.5 }}
+                  showHead={false}
+                  showTail={false}
+                  // headShape="circle"
+                  // tailShape="circle"
                 />
                 <Xarrow
-                  id="sec-antara"
                   start="sec-battery"
                   end="sec-load"
                   path="straight"
                   strokeWidth={3}
-                  color="rgba(28, 147, 255,0.3)"
-                  dashness={{ animation: 0.5 }}
-                  showHead={true}
-                  showTail={true}
-                  headShape="circle"
-                  tailShape="circle"
+                  // color="rgba(28, 147, 255,1)"
+                  color="#d1d1d1"
+                  // dashness={{ animation: 0.5 }}
+                  showHead={false}
+                  showTail={false}
+                  // headShape="circle"
+                  // tailShape="circle"
                 />
                 <Xarrow
-                  start="sec-antara"
-                  end="sec-pv"
-                  path="straight"
+                  start="sec-pv"
+                  end="sec-battery"
+                  path="grid"
+                  // endAnchor="bottom"
+                  gridBreak="100%-500"
+                  strokeWidth={3}
+                  color="#d1d1d1"
+                  endAnchor={{ position: 'bottom', offset: { x: 0.5 } }}
+                  showHead={false}
+                  showTail={false}
+                  // headShape="circle"
+                  // tailShape="circle"
+                />
+                {/* <Xarrow
+                  start="sec-pv"
+                  end="sec-load"
+                  path="grid"
+                  endAnchor="top"
                   strokeWidth={3}
                   color="rgba(28, 147, 255,0.3)"
-                  dashness={{ animation: 0.5 }}
                   showHead={true}
                   showTail={true}
                   headShape="circle"
                   tailShape="circle"
-                />
+                /> */}
                 {/* <Xarrow
                   start="sec-between"
                   end="sec-load"
@@ -122,7 +131,30 @@ const Home: NextPage = () => {
                   showHead={false}
                 /> */}
               </div>
-              <div className="right-culumn bg-blue-100">
+              <div className="right-column ">
+                <div className="grid grid-flow-col grid-rows-3 gap-5">
+                  <section className="flex flex-wrap justify-start">
+                    <div className="shadow-embross card w-full p-3">
+                      <CustomLineChart
+                        data={data.battery.soc_data}
+                        label="SoC"
+                        unit="%"
+                        domain={[0, 100]}
+                      />
+                    </div>
+                  </section>
+                  <section className="flex flex-wrap justify-start">
+                    <Pv data={data.pv} />
+                  </section>
+                  <section className="flex flex-wrap justify-start">
+                    <CustomLineChart
+                      data={data.load.electricity_load}
+                      label="Electricity Load"
+                      unit="kW"
+                      domain={[0, 'auto']}
+                    />
+                  </section>
+                </div>
               </div>
             </div>
           )}

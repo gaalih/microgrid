@@ -4,6 +4,7 @@ import { WifiIcon } from '@heroicons/react/outline'
 import { gridLabel } from '../lib/variables'
 import Detail from './Detail'
 import SutetImage from "../assets/sutet.jpg"
+import GridIcon from "../assets/grid.svg"
 
 type GridProps = {
   data: { [key: string]: number }
@@ -42,7 +43,7 @@ function Grid({ data }: GridProps) {
     
     // ver 02
 
-    <div className="card card-main shadow-embross card-compact h-max w-auto p-3">
+    <div id="sec-grid" className="card card-main shadow-embross card-compact h-max w-auto p-3">
       <div className="flex justify-start gap-4">
       <div>
         <h1 className="card-title text-blue-custom pb-1 text-center text-sm font-bold">
@@ -60,10 +61,12 @@ function Grid({ data }: GridProps) {
       </div>
         <div>
           <div
-            id="sec-grid"
             className="card grid h-full w-24 place-content-center content-center bg-gradient-to-tl from-[#4B51FE] to-[#7E4FFE] p-3"
           >
-            <WifiIcon className="h-auto w-16 text-slate-100" />
+            {/* <WifiIcon className="h-auto w-16 text-slate-100" /> */}
+            <Image
+              src={GridIcon}
+            />
           </div>
         </div>
       </div>
