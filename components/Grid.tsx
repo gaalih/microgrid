@@ -46,7 +46,7 @@ function Grid({ data }: GridProps) {
     <div id="sec-grid" className="card card-main shadow-embross card-compact h-max w-auto p-3">
       <div className="flex justify-start gap-4">
       <div>
-        <h1 className="card-title text-blue-custom pb-1 text-center text-sm font-bold">
+        <h1 className="card-title pb-1 text-center text-sm">
           Grid
         </h1>
         {/* <Detail data={data} label={gridLabel} className="text-xs" /> */}
@@ -60,10 +60,7 @@ function Grid({ data }: GridProps) {
         />
       </div>
         <div>
-          <div
-            className="card grid h-full w-24 place-content-center content-center bg-gradient-to-tl from-[#4B51FE] to-[#7E4FFE] p-3"
-          >
-            {/* <WifiIcon className="h-auto w-16 text-slate-100" /> */}
+          <div className="card grid h-full w-24 place-content-center content-center bg-gradient-to-tl from-[#4B51FE] to-[#7E4FFE] p-3">
             <Image
               src={GridIcon}
             />
@@ -71,7 +68,7 @@ function Grid({ data }: GridProps) {
         </div>
       </div>
       
-      
+      {/* <button className="btn-detail absolute bottom-2 right-2 btn btn-xs btn-warning uppercase text-2xs shadow-md">Detail</button> */}
 
     </div>
 

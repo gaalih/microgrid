@@ -70,6 +70,8 @@ function Pv({ data }: PvProps) {
               </div>
               
             </div>
+      <button className="btn-detail absolute bottom-2 left-2 btn btn-xs btn-warning uppercase text-2xs shadow-md">Detail</button>
+
           </div>
           //end ver 02
           

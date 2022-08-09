@@ -28,7 +28,8 @@
 
 .main-content .card-title {
   font-size: 0.9em;
-  @apply font-extrabold;
+  color: #294285!important;
+  @apply font-bold;
 }
 
 .main-content .card-label {
@@ -44,4 +45,10 @@
 .main-content .card-unit {
   @apply text-slate-700;
   font-size: 0.5em;
+}
+
+.btn-detail{
+  @apply p-0 py-1 px-2 tracking-widest;
+  font-size: 0.5em
+  
 }

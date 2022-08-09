@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="px-6 py-3 text-sm text-blue-custom">
+    <footer className="-mt-8 px-6 pb-2 text-sm text-blue-custom">
       <div className="container mx-auto">
         Developed by{' '}
         <div className="font-medium">

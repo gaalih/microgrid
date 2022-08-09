@@ -1,4 +1,7 @@
 import { format } from 'date-fns'
+// import ApexCharts from 'apexcharts'
+// import Chart from "react-apexcharts";
+
 import {
   CartesianGrid,
   Label,
@@ -14,7 +17,7 @@ import type { AxisDomain } from 'recharts/types/util/types'
 
 import { capitalize } from '../lib/utils'
 
-type CustomLineChartProps = {
+type ChartProps = {
   data: {
     estimated: number
     measured: number
@@ -25,50 +28,47 @@ type CustomLineChartProps = {
   domain?: AxisDomain
 }
 
-function CustomLineChart({ data, label, unit, domain }: CustomLineChartProps) {
+function Chart({ data, label, unit, domain }: ChartProps) {
+
   return (
-    <ResponsiveContainer>
-      <LineChart data={data} style={{ fontFamily: 'Albert Sans'}} className="-ml-5 mt-2 p-0">
-        <CartesianGrid/>
+    <ResponsiveContainer className="col-span-3">
+      <LineChart data={data}>
+        <CartesianGrid />
         <XAxis
           dataKey="timestamp"
           domain={['dataMin', 'dataMax']}
           tickFormatter={(value) => format(new Date(value), 'HH:mm')}
-          style={{ fontSize: '70%'}}
         />
-        <YAxis interval="preserveStartEnd" domain={domain} style={{ fontSize: '70%'}}>
+        <YAxis interval="preserveStartEnd" domain={domain}>
           <Label
             value={label + (unit ? ` (${unit})` : '')}
             position="insideTopLeft"
             dy={-27}
             dx={55}
-            style={{ fontFamily: 'Albert Sans', fontSize: '70%', fill: '#294285', fontWeight: 'bold'}}
+            className="font-medium"
           />
         </YAxis>
         <Tooltip
           labelFormatter={(label) =>
             format(new Date(label), 'dd MMMM yyyy, HH:mm:ss')
           }
-          wrapperStyle={{fontSize: '70%' }}
         />
         <Legend
           verticalAlign="top"
           align="right"
-          wrapperStyle={{ top: 0, fontSize: '70%' }}
-          iconType="circle"
-          iconSize={9}
+          wrapperStyle={{ top: 0 }}
           formatter={capitalize}
         />
         <Line
           type="monotone"
           dataKey="estimated"
-          stroke="#079992"
+          stroke="#065f46"
           dot={false}
         />
-        <Line type="monotone" dataKey="measured" stroke="#fa983a" dot={false}  />
+        <Line type="monotone" dataKey="measured" stroke="#fbbf24" dot={false} />
       </LineChart>
     </ResponsiveContainer>
   )
 }
 
-export default CustomLineChart
+export default Chart
