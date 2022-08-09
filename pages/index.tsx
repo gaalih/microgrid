@@ -38,15 +38,17 @@ const Home: NextPage = () => {
       <Navbar />
       {
         <main className="main-content mx-10 mb-1 pt-2">
+          {status === 'loading' && <p>Loading...</p>}
+          {status === 'error' && <p>Data could not be loaded</p>}
           {data && (
             <div className="grid grid-cols-3 gap-10">
               <div className="left-column">
                 <div className="grid grid-flow-col grid-rows-3 gap-4">
                   <section className="h-100 flex flex-wrap">
                     <Grid data={data.grid} />
-                    <div class="dropdown dropdown-hover">
+                    <div className="dropdown dropdown-hover">
                       <label tabindex="0" class="btn-detail absolute bottom-2 right-2 btn btn-xs btn-warning uppercase text-2xs shadow-md">detail</label>
-                      <div tabindex="0" class="ml-1 dropdown-content card card-compact w-56 p-2 shadow-lg bg-base-100 text-primary-content">
+                      <div tabindex="0" class="ml-1 dropdown-content card card-main card-compact w-fit p-2 pr-4 shadow-lg bg-base-100 text-primary-content">
                         <div className="card-body p-0 my-0">
                           <h3 className="card-title">Grid</h3>
                            <Detail
@@ -58,7 +60,7 @@ const Home: NextPage = () => {
                                 preactive: data.grid.preactive,
                               }}
                               label={gridLabel}
-                              className="-mt-3 text-xs flex flex-wrap gap-2"
+                              className="-mt-3 text-2xs flex flex-col gap-1"
                             />
                         </div>
                       </div>
@@ -74,12 +76,86 @@ const Home: NextPage = () => {
               <div className="center-column">
                 <div className="grid grid-flow-col grid-rows-3 gap-5">
                   <section className="flex flex-wrap justify-start">
+                    <div className="dropdown dropdown-hover dropdown-left">
+                      <label tabindex="0" class="btn-detail absolute z-10 bottom-2 left-2 btn btn-xs btn-warning uppercase text-2xs shadow-md">detail</label>
+                      <div tabindex="0" class="mr-1 dropdown-content card card-main card-compact w-fit p-2 pr-4 shadow-lg bg-base-100 text-primary-content">
+                        <div className="card-body p-0 my-0">
+                          <h3 className="card-title">Bess</h3>
+                          <div className="flex gap-7 -mt-3">
+                            <Detail
+                                data={{
+                                  total_voltage: data.battery.total_voltage,
+                                  est_soc: data.battery.est_soc,
+                                  meas_soc: data.battery.meas_soc,
+                                  current: data.battery.current,
+                                  max_temp: data.battery.max_temp,
+                                }}
+                                label={batteryLabel}
+                                header="DC Side"
+                                className="self-start text-2xs gap-1 flex flex-col"
+                              />
+                              <Detail
+                                data={{
+                                  volt_output: data.battery.volt_output,
+                                  current_output: data.battery.current_output,
+                                  frequency: data.battery.frequency,
+                                  pactive: data.battery.pactive,
+                                  preactive: data.battery.preactive,
+                                }}
+                                label={batteryLabel}
+                                header="AC Side"
+                                className="self-start text-2xs gap-1 flex flex-col"
+                              />
+                          </div>
+                           
+                        </div>
+                      </div>
+                    </div>
                     <Battery data={data.battery} />
                   </section>
                   <section className="flex flex-wrap justify-end">
+                  <div className="dropdown dropdown-hover dropdown-left">
+                      <label tabindex="0" class="btn-detail absolute z-10 bottom-2 left-2 btn btn-xs btn-warning uppercase text-2xs shadow-md">detail</label>
+                      <div tabindex="0" class="mr-1 dropdown-content card card-main card-compact w-fit p-2 pr-4 shadow-lg bg-base-100 text-primary-content">
+                        <div className="card-body p-0 my-0">
+                          <h3 className="card-title">Pv</h3>
+                          <Detail
+                            data={{
+                              vdc: data.pv.vdc,
+                              idc: data.pv.idc,
+                              vac: data.pv.vac,
+                              iac: data.pv.iac,
+                              frequency: data.pv.frequency,
+                              pac: data.pv.pac,
+                            }}
+                            label={pvLabel}
+                            className="-mt-3 text-2xs flex flex-col gap-1"
+                          />
+                           
+                        </div>
+                      </div>
+                    </div>
                     <Pv data={data.pv} />
                   </section>
                   <section className="flex flex-wrap justify-start">
+                  <div className="dropdown dropdown-hover dropdown-left">
+                      <label tabindex="0" class="btn-detail absolute z-10 bottom-2 left-2 btn btn-xs btn-warning uppercase text-2xs shadow-md">detail</label>
+                      <div tabindex="0" class="mr-1 -mt-20 dropdown-content card card-main card-compact w-fit p-2 pr-4 shadow-lg bg-base-100 text-primary-content">
+                        <div className="card-body p-0 my-0">
+                          <h3 className="card-title">Load</h3>
+                          <Detail
+                              data={{
+                                voltage: data.load.voltage,
+                                current: data.load.current,
+                                pf: data.load.pf,
+                                frequency: data.load.frequency,
+                              }}
+                              label={loadLabel}
+                              className="-mt-3 text-2xs flex flex-col gap-1"
+                            />
+                        </div>
+                      </div>
+                    </div>
                     <Load data={data.load} />
                   </section>
                 </div>
