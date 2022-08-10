@@ -27,10 +27,10 @@ function Detail({ data, label, header, className }: DetailProps) {
             </p>
             <h5 className="card-value text-xl font-bold">
               {value.toString()}
-              {/* <span className="ml-1 text-xs" dangerouslySetInnerHTML={{ __html: label[key].unit }}></span> */}
+              {/* <span className="ml-1 text-xs" dangerouslySetInnerHTML={{ __html: label[key].unit! }}></span> */}
               <span className="card-unit ml-1 text-xs">
                 {label[key].unit
-                  ? Parse(label[key].unit.toString())
+                  ? Parse(label[key].unit!.toString())
                   : label[key].unit}
               </span>
             </h5>
