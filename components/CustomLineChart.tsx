@@ -28,28 +28,41 @@ type CustomLineChartProps = {
 function CustomLineChart({ data, label, unit, domain }: CustomLineChartProps) {
   return (
     <ResponsiveContainer>
-      <LineChart data={data} style={{ fontFamily: 'Albert Sans'}} className="-ml-5 mt-2 p-0">
-        <CartesianGrid/>
+      <LineChart
+        data={data}
+        style={{ fontFamily: 'Albert Sans' }}
+        className="-ml-5 mt-2 p-0"
+      >
+        <CartesianGrid />
         <XAxis
           dataKey="timestamp"
           domain={['dataMin', 'dataMax']}
           tickFormatter={(value) => format(new Date(value), 'HH:mm')}
-          style={{ fontSize: '70%'}}
+          style={{ fontSize: '70%' }}
         />
-        <YAxis interval="preserveStartEnd" domain={domain} style={{ fontSize: '70%'}}>
+        <YAxis
+          interval="preserveStartEnd"
+          domain={domain}
+          style={{ fontSize: '70%' }}
+        >
           <Label
             value={label + (unit ? ` (${unit})` : '')}
             position="insideTopLeft"
             dy={-27}
             dx={55}
-            style={{ fontFamily: 'Albert Sans', fontSize: '70%', fill: '#294285', fontWeight: 'bold'}}
+            style={{
+              fontFamily: 'Albert Sans',
+              fontSize: '70%',
+              fill: '#294285',
+              fontWeight: 'bold',
+            }}
           />
         </YAxis>
         <Tooltip
           labelFormatter={(label) =>
             format(new Date(label), 'dd MMMM yyyy, HH:mm:ss')
           }
-          wrapperStyle={{fontSize: '70%' }}
+          wrapperStyle={{ fontSize: '70%' }}
         />
         <Legend
           verticalAlign="top"
@@ -65,7 +78,7 @@ function CustomLineChart({ data, label, unit, domain }: CustomLineChartProps) {
           stroke="#079992"
           dot={false}
         />
-        <Line type="monotone" dataKey="measured" stroke="#fa983a" dot={false}  />
+        <Line type="monotone" dataKey="measured" stroke="#fa983a" dot={false} />
       </LineChart>
     </ResponsiveContainer>
   )

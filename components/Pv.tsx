@@ -3,9 +3,8 @@ import Image from 'next/image'
 import { DesktopComputerIcon } from '@heroicons/react/outline'
 import { pvLabel } from '../lib/variables'
 import Detail from './Detail'
-import PvImage from "../assets/pv.png"
-import PvIcon from "../assets/pv.svg"
-
+import PvImage from '../assets/pv.png'
+import PvIcon from '../assets/pv.svg'
 
 type PvProps = {
   data: { [key: string]: number }
@@ -30,7 +29,6 @@ function Pv({ data }: PvProps) {
     //         </div>
     //       </div>
 
-
     //       <div id='sec-pv' className="card-compact card w-24 bg-base-100 shadow-xl">
     //         <div className="flex gap-4 justify-center p-2">
     //           <div>
@@ -42,40 +40,43 @@ function Pv({ data }: PvProps) {
     //         </div>
     //       </div>
 
-
     //     </div>
 
     // </div>
 
     //ver 02
-    <div id="sec-pv" className="card-main card-compact card w-auto h-max p-3 shadow-embross">
-            <div className="flex gap-4 justify-start">
-              <div>
-                <div className="grid content-center place-content-center card w-24 h-full bg-gradient-to-tl from-[#ff5e62] to-[#ff9966] p-3">
-                   {/* <DesktopComputerIcon className="text-slate-100 w-16 h-auto"/> */}
-                   <Image
-                      src={PvIcon}
-                    />
-                </div>
-              </div>
-              <div>
-                <h1 className="card-title font-bold text-sm text-blue-custom pb-1 text-center">PV</h1>
-                <Detail
-                    data={{
-                      frequency: data.frequency,
-                      pac: data.pac}}
-                    label={pvLabel}
-                    className="text-xs"
-                  />
-              </div>
-              
-            </div>
-      <button className="btn-detail absolute bottom-2 left-2 btn btn-xs btn-warning uppercase text-2xs shadow-md">Detail</button>
-
+    <div
+      id="sec-pv"
+      className="card-main card-compact shadow-embross card h-max w-auto p-3"
+    >
+      <div className="flex justify-start gap-4">
+        <div>
+          <div className="card grid h-full w-24 place-content-center content-center bg-gradient-to-tl from-[#ff5e62] to-[#ff9966] p-3">
+            {/* <DesktopComputerIcon className="text-slate-100 w-16 h-auto"/> */}
+            <Image src={PvIcon} />
           </div>
-          //end ver 02
-          
-          // ver 03
+        </div>
+        <div>
+          <h1 className="text-blue-custom card-title pb-1 text-center text-sm font-bold">
+            PV
+          </h1>
+          <Detail
+            data={{
+              frequency: data.frequency,
+              pac: data.pac,
+            }}
+            label={pvLabel}
+            className="text-xs"
+          />
+        </div>
+      </div>
+      <button className="btn-detail btn btn-warning btn-xs text-2xs absolute bottom-2 left-2 uppercase shadow-md">
+        Detail
+      </button>
+    </div>
+    //end ver 02
+
+    // ver 03
 
     // <div id="sec-pv" className="card card-main shadow-xl">
     // <figure>
@@ -97,8 +98,8 @@ function Pv({ data }: PvProps) {
     //      /></p>
     // </div>
     //   </div>
-  
-      //end ver 03
+
+    //end ver 03
   )
 }
 

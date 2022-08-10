@@ -3,9 +3,8 @@ import Image from 'next/image'
 import { LightningBoltIcon } from '@heroicons/react/outline'
 import { batteryLabel } from '../lib/variables'
 import Detail from './Detail'
-import BateraiImage from "../assets/baterai.png"
-import BatteryIcon from "../assets/battery.svg"
-
+import BateraiImage from '../assets/baterai.png'
+import BatteryIcon from '../assets/battery.svg'
 
 type BatteryProps = {
   data: { [key: string]: number }
@@ -54,27 +53,26 @@ function Battery({ data }: BatteryProps) {
     // </div>
 
     //Ver 02
-    <div id="sec-battery" className="card card-main shadow-embross card-compact h-max w-auto p-3">
+    <div
+      id="sec-battery"
+      className="card-main shadow-embross card-compact card h-max w-auto p-3"
+    >
       <div className="flex justify-start gap-4">
         <div>
-          <div
-            className="card grid h-full w-24 place-content-center content-center bg-gradient-to-tl from-[#56CEBA] to-[#32CE75] p-3"
-          >
+          <div className="card grid h-full w-24 place-content-center content-center bg-gradient-to-tl from-[#56CEBA] to-[#32CE75] p-3">
             {/* <LightningBoltIcon className="h-auto w-16 text-slate-100" /> */}
-            <Image
-              src={BatteryIcon}
-            />
+            <Image src={BatteryIcon} />
           </div>
         </div>
         <div className="">
-          <h1 className="card-title text-blue-custom pb-1 text-center text-sm font-bold">
+          <h1 className="text-blue-custom card-title pb-1 text-center text-sm font-bold">
             Bess
           </h1>
           <div className="flex w-full gap-2">
             <Detail
               data={{
                 est_soc: data.est_soc,
-                meas_soc: data.meas_soc
+                meas_soc: data.meas_soc,
                 // current: data.current
               }}
               label={batteryLabel}
@@ -106,42 +104,40 @@ function Battery({ data }: BatteryProps) {
     //   </div>
     // </div>
 
-
-
     // ver 03
 
-  //   <div id="sec-battery" className="card card-main shadow-xl">
-  // <figure>
-  // <Image
-  //     src={BateraiImage}
-  //     layout="fill"
-  //   />
-  //   </figure>
-  // <div className="relative card-body gap-0.5 bg-gradient-to-r from-[rgba(0,0,0,0.8)] to-[rgba(0,0,0,0.1)] grid content-end text-xs">
-  //       <h2 className='card-title text-lg font-bold text-slate-100 uppercase mb-1'>BESS</h2>
-  //       <div className='grid content-end'>
-  //       <div className="flex justify-end">
-  //           <p className="justify-self-start">
-  //           <Detail
-  //           data={{
-  //             est_soc: data.est_soc,
-  //             meas_soc: data.meas_soc,
-  //           }}
-  //           label={batteryLabel}
-  //           className="text-xs text-white"
-  //         /></p>
-  //         <p className="justify-self-end">
-  //           <Detail
-  //           data={{
-  //             current: data.current,
-  //             }}
-  //             label={batteryLabel}
-  //             className="text-xs text-white"
-  //           /></p>
-  //       </div> 
-  //       </div>
-  // </div>
-  //   </div>
+    //   <div id="sec-battery" className="card card-main shadow-xl">
+    // <figure>
+    // <Image
+    //     src={BateraiImage}
+    //     layout="fill"
+    //   />
+    //   </figure>
+    // <div className="relative card-body gap-0.5 bg-gradient-to-r from-[rgba(0,0,0,0.8)] to-[rgba(0,0,0,0.1)] grid content-end text-xs">
+    //       <h2 className='card-title text-lg font-bold text-slate-100 uppercase mb-1'>BESS</h2>
+    //       <div className='grid content-end'>
+    //       <div className="flex justify-end">
+    //           <p className="justify-self-start">
+    //           <Detail
+    //           data={{
+    //             est_soc: data.est_soc,
+    //             meas_soc: data.meas_soc,
+    //           }}
+    //           label={batteryLabel}
+    //           className="text-xs text-white"
+    //         /></p>
+    //         <p className="justify-self-end">
+    //           <Detail
+    //           data={{
+    //             current: data.current,
+    //             }}
+    //             label={batteryLabel}
+    //             className="text-xs text-white"
+    //           /></p>
+    //       </div>
+    //       </div>
+    // </div>
+    //   </div>
 
     //end ver 03
   )
