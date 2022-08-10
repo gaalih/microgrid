@@ -24,5 +24,6 @@ export async function fetchData() {
   // }
   // const data = (await response.json()) as Data
   // return data
-  return dataJson
+  const data = dataJson as Data
+  return data
 }

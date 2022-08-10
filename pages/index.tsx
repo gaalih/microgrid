@@ -85,17 +85,11 @@ const Home: NextPage = () => {
                 <div className="grid grid-flow-col grid-rows-3 gap-4">
                   <section className="h-100 flex flex-wrap">
                     <Grid data={data.grid} />
-                    <div className="dropdown dropdown-hover">
-                      <label
-                        tabindex="0"
-                        class="btn-detail btn btn-warning btn-xs text-2xs absolute bottom-2 right-2 uppercase shadow-md"
-                      >
+                    <div className="dropdown-hover dropdown">
+                      <label className="btn-detail btn btn-warning btn-xs text-2xs absolute bottom-2 right-2 uppercase shadow-md">
                         detail
                       </label>
-                      <div
-                        tabindex="0"
-                        class="card-main card dropdown-content card-compact ml-1 w-fit bg-base-100 p-2 pr-4 text-primary-content shadow-lg"
-                      >
+                      <div className="card-main card-compact card dropdown-content ml-1 w-fit bg-base-100 p-2 pr-4 text-primary-content shadow-lg">
                         <div className="card-body my-0 p-0">
                           <h3 className="card-title">Grid</h3>
                           <Detail
@@ -123,16 +117,10 @@ const Home: NextPage = () => {
                 <div className="grid grid-flow-col grid-rows-3 gap-5">
                   <section className="flex flex-wrap justify-start">
                     <div className="dropdown-hover dropdown dropdown-left">
-                      <label
-                        tabindex="0"
-                        class="btn-detail btn btn-warning btn-xs text-2xs absolute bottom-2 left-2 z-10 uppercase shadow-md"
-                      >
+                      <label className="btn-detail btn btn-warning btn-xs text-2xs absolute bottom-2 left-2 z-10 uppercase shadow-md">
                         detail
                       </label>
-                      <div
-                        tabindex="0"
-                        class="card-main card-compact card dropdown-content mr-1 w-fit bg-base-100 p-2 pr-4 text-primary-content shadow-lg"
-                      >
+                      <div className="card-main card-compact card dropdown-content mr-1 w-fit bg-base-100 p-2 pr-4 text-primary-content shadow-lg">
                         <div className="card-body my-0 p-0">
                           <h3 className="card-title">Bess</h3>
                           <div className="-mt-3 flex gap-7">
@@ -164,20 +152,20 @@ const Home: NextPage = () => {
                         </div>
                       </div>
                     </div>
-                    <Battery data={data.battery} />
+                    <Battery
+                      data={{
+                        est_soc: data.battery.est_soc,
+                        meas_soc: data.battery.meas_soc,
+                        current: data.battery.current,
+                      }}
+                    />
                   </section>
                   <section className="flex flex-wrap justify-end">
                     <div className="dropdown-hover dropdown dropdown-left">
-                      <label
-                        tabindex="0"
-                        class="btn-detail btn btn-warning btn-xs text-2xs absolute bottom-2 left-2 z-10 uppercase shadow-md"
-                      >
+                      <label className="btn-detail btn btn-warning btn-xs text-2xs absolute bottom-2 left-2 z-10 uppercase shadow-md">
                         detail
                       </label>
-                      <div
-                        tabindex="0"
-                        class="card-main card-compact card dropdown-content mr-1 w-fit bg-base-100 p-2 pr-4 text-primary-content shadow-lg"
-                      >
+                      <div className="card-main card-compact card dropdown-content mr-1 w-fit bg-base-100 p-2 pr-4 text-primary-content shadow-lg">
                         <div className="card-body my-0 p-0">
                           <h3 className="card-title">Pv</h3>
                           <Detail
@@ -195,20 +183,19 @@ const Home: NextPage = () => {
                         </div>
                       </div>
                     </div>
-                    <Pv data={data.pv} />
+                    <Pv
+                      data={{
+                        frequency: data.pv.frequency,
+                        pac: data.pv.pac,
+                      }}
+                    />
                   </section>
                   <section className="flex flex-wrap justify-start">
                     <div className="dropdown-hover dropdown dropdown-left">
-                      <label
-                        tabindex="0"
-                        class="btn-detail btn btn-warning btn-xs text-2xs absolute bottom-2 left-2 z-10 uppercase shadow-md"
-                      >
+                      <label className="btn-detail btn btn-warning btn-xs text-2xs absolute bottom-2 left-2 z-10 uppercase shadow-md">
                         detail
                       </label>
-                      <div
-                        tabindex="0"
-                        class="card-main card-compact card dropdown-content mr-1 -mt-20 w-fit bg-base-100 p-2 pr-4 text-primary-content shadow-lg"
-                      >
+                      <div className="card-main card-compact card dropdown-content mr-1 -mt-20 w-fit bg-base-100 p-2 pr-4 text-primary-content shadow-lg">
                         <div className="card-body my-0 p-0">
                           <h3 className="card-title">Load</h3>
                           <Detail
@@ -224,7 +211,12 @@ const Home: NextPage = () => {
                         </div>
                       </div>
                     </div>
-                    <Load data={data.load} />
+                    <Load
+                      data={{
+                        current: data.load.current,
+                        frequency: data.load.frequency,
+                      }}
+                    />
                   </section>
                 </div>
                 <Xarrow
