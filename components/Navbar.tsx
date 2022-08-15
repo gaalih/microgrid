@@ -8,8 +8,8 @@ function Navbar() {
         <Image src={Logo} alt="Logo Lab" width={40}
       height={40}/>
       <div>
-        <h3 className="text-lg font-bold">Microgrid Digital Twin</h3>
-        <p className="text-sm">
+        <h3 className="text-sm sm:text-lg font-bold">Microgrid Digital Twin</h3>
+        <p className="text-2xs sm:text-sm">
         Lab. Energy Management, Engineering Physics, ITB
         </p>
       </div>

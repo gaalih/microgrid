@@ -37,21 +37,21 @@ const Home: NextPage = () => {
 
       <Navbar />
       {
-        <main className="main-content mx-10 mb-1 h-full pt-2">
+        <main className="main-content mx-0 sm:mx-10 mb-1 h-full pt-2 scale-90 sm:scale-100">
           {status === 'loading' && (
             <div className="my-32 mb-80 grid h-auto grid-cols-12 place-content-center gap-4">
-              <div className="col-span-5"></div>
-              <div className="col-span-2">
+              <div className="col-span-3 sm:col-span-5"></div>
+              <div className="col-span-6 sm:col-span-2">
                 <progress className="progress h-5 w-full"></progress>
                 <p className="text-center">Loading...</p>
               </div>
-              <div className="col-span-5"></div>
+              <div className="col-span-3 sm:col-span-5"></div>
             </div>
           )}
           {status === 'error' && (
             <div className="my-32 mb-64 grid h-auto grid-cols-12 place-content-center gap-4">
-              <div className="col-span-5"></div>
-              <div className="col-span-2 animate-fadeIn">
+              <div className="col-span-3 sm:col-span-5"></div>
+              <div className="col-span-6 sm:col-span-2 animate-fadeIn">
                 <div className="flex justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -76,13 +76,13 @@ const Home: NextPage = () => {
                   Data could not be loaded.
                 </p>
               </div>
-              <div className="col-span-5"></div>
+              <div className="col-span-3 sm:col-span-5"></div>
             </div>
           )}
           {data && (
-            <div className="grid animate-fadeIn grid-cols-3 gap-10">
-              <div className="left-column">
-                <div className="grid grid-flow-col grid-rows-3 gap-4">
+            <div className="grid animate-fadeIn grid-cols-2 sm:grid-cols-3 gap-0 sm:gap-10 scale-90 sm:scale-100 -mt-24 sm:-mt-0">
+              <div className="left-column -ml-5 mr-5 sm:mr-0 sm:ml-0">
+                <div className="grid grid-flow-col grid-rows-3 gap-14 sm:gap-4 ">
                   <section className="h-100 flex flex-wrap">
                     <Grid data={data.grid} />
                     <div className="dropdown-hover dropdown">
@@ -113,8 +113,9 @@ const Home: NextPage = () => {
                 </div>
               </div>
 
-              <div className="center-column">
-                <div className="grid grid-flow-col grid-rows-3 gap-5">
+
+              <div className="center-column -mr-5 ml-5 sm:ml-0 sm:mr-0">
+                <div className="grid grid-flow-col grid-rows-3 gap-14 sm:gap-5">
                   <section className="flex flex-wrap justify-start">
                     <div className="dropdown-hover dropdown dropdown-left">
                       <label className="btn-detail btn btn-warning btn-xs text-2xs absolute bottom-2 left-2 z-10 uppercase shadow-md">
@@ -219,6 +220,35 @@ const Home: NextPage = () => {
                     />
                   </section>
                 </div>
+              </div>
+              <div className="right-column col-span-2 sm:col-span-1 -mx-5 sm:-mx-0 mt-10 sm:mt-0">
+                <div className="shadow-embross card-compact card mb-10 sm:mb-4 flex h-40 justify-center p-3">
+                  <CustomLineChart
+                    data={data.battery.soc_data}
+                    label="SoC"
+                    unit="%"
+                    domain={[0, 100]}
+                  />
+                </div>
+                <div className="shadow-embross card-compact card my-10 sm:my-4 h-40 p-3">
+                  <CustomLineChart
+                    data={data.pv.pv_production}
+                    label="PV Production"
+                    unit="kW"
+                    domain={[0, 'auto']}
+                  />
+                </div>
+                <div className="shadow-embross card-compact card mt-10 sm:mt-4 h-40 p-3">
+                  <CustomLineChart
+                    data={data.load.electricity_load}
+                    label="Electricity Load"
+                    unit="kW"
+                    domain={[0, 'auto']}
+                  />
+                </div>
+              </div>
+
+
                 <Xarrow
                   start="sec-grid"
                   end="sec-battery"
@@ -248,38 +278,13 @@ const Home: NextPage = () => {
                   showHead={false}
                   showTail={false}
                 />
-              </div>
-              <div className="right-column">
-                <div className="shadow-embross card-compact card mb-4 flex h-40 justify-center p-3">
-                  <CustomLineChart
-                    data={data.battery.soc_data}
-                    label="SoC"
-                    unit="%"
-                    domain={[0, 100]}
-                  />
-                </div>
-                <div className="shadow-embross card-compact card my-4 h-40 p-3">
-                  <CustomLineChart
-                    data={data.pv.pv_production}
-                    label="PV Production"
-                    unit="kW"
-                    domain={[0, 'auto']}
-                  />
-                </div>
-                <div className="shadow-embross card-compact card mt-4 h-40 p-3">
-                  <CustomLineChart
-                    data={data.load.electricity_load}
-                    label="Electricity Load"
-                    unit="kW"
-                    domain={[0, 'auto']}
-                  />
-                </div>
-              </div>
+                
             </div>
+            
           )}
         </main>
       }
-      <Footer />
+      <Footer/>
     </div>
   )
 }
