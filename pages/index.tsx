@@ -84,12 +84,12 @@ const Home: NextPage = () => {
             <div className="grid animate-fadeIn grid-cols-2 sm:grid-cols-3 gap-0 sm:gap-10 2xl:gap-16 scale-90 sm:scale-100 -mt-24 sm:-mt-0 2xl:mt-16 2xl:mx-10 w-screen">
               <div className="left-column -ml-5 mr-5 sm:mr-0 sm:ml-0">
                 
-                <div className="sm:hidden relative">
+                {/* <div className="sm:hidden relative">
                   <svg className="stroke-[#d1d1d1] stroke-[4px] absolute z-0 w-screen">
                     <line x1="60" y1="60" x2="600" y2="60"/>
                     Sorry, your browser does not support inline SVG.
                   </svg>
-                </div>
+                </div> */}
 
                 <div className="grid grid-flow-col grid-rows-3 gap-14 sm:gap-4 2xl:gap-16 relative sm:static z-10">
                   <section className="h-100 flex flex-wrap">
@@ -124,12 +124,12 @@ const Home: NextPage = () => {
 
 
               <div className="center-column -mr-5 ml-5 sm:ml-0 sm:mr-0">
-                <div className="sm:hidden relative">
+                {/* <div className="sm:hidden relative">
                   <svg className='stroke-[#d1d1d1] stroke-[4px] absolute z-0' height="400">
                     <line x1="100" y1="500" x2="100" y2="100"/>
                     Sorry, your browser does not support inline SVG.
                   </svg>
-                </div>
+                </div> */}
                 <div className="grid grid-flow-col grid-rows-3 gap-14 sm:gap-5 2xl:gap-16 relative sm:static z-10">
                   <section className="flex flex-wrap justify-end sm:justify-start">
                     <div className="dropdown-hover dropdown dropdown-left z-50">
