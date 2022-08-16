@@ -38,8 +38,9 @@ const Home: NextPage = () => {
       <Navbar />
       {
         <main className="main-content mx-0 sm:mx-10 mb-1 h-full pt-2 scale-90 sm:scale-100">
+          
           {status === 'loading' && (
-            <div className="my-32 mb-80 grid h-auto grid-cols-12 place-content-center gap-4">
+            <div className="my-44 mb-96 sm:mb-80 grid h-auto grid-cols-12 place-content-center gap-4">
               <div className="col-span-3 sm:col-span-5"></div>
               <div className="col-span-6 sm:col-span-2">
                 <progress className="progress h-5 w-full"></progress>
@@ -49,7 +50,7 @@ const Home: NextPage = () => {
             </div>
           )}
           {status === 'error' && (
-            <div className="my-32 mb-64 grid h-auto grid-cols-12 place-content-center gap-4">
+            <div className="my-44 mb-64 sm:mb-64 grid h-auto grid-cols-12 place-content-center gap-4">
               <div className="col-span-3 sm:col-span-5"></div>
               <div className="col-span-6 sm:col-span-2 animate-fadeIn">
                 <div className="flex justify-center">
@@ -82,7 +83,15 @@ const Home: NextPage = () => {
           {data && (
             <div className="grid animate-fadeIn grid-cols-2 sm:grid-cols-3 gap-0 sm:gap-10 2xl:gap-16 scale-90 sm:scale-100 -mt-24 sm:-mt-0 2xl:mt-16 2xl:mx-10">
               <div className="left-column -ml-5 mr-5 sm:mr-0 sm:ml-0">
-                <div className="grid grid-flow-col grid-rows-3 gap-14 sm:gap-4 2xl:gap-16">
+                
+                <div className="sm:hidden relative">
+                  <svg className='stroke-[#d1d1d1] stroke-[4px] absolute z-0'>
+                    <line x1="60" y1="60" x2="600" y2="60"/>
+                    Sorry, your browser does not support inline SVG.
+                  </svg>
+                </div>
+
+                <div className="grid grid-flow-col grid-rows-3 gap-14 sm:gap-4 2xl:gap-16 relative sm:static z-10">
                   <section className="h-100 flex flex-wrap">
                     <Grid data={data.grid} />
                     <div className="dropdown-hover dropdown">
@@ -115,8 +124,14 @@ const Home: NextPage = () => {
 
 
               <div className="center-column -mr-5 ml-5 sm:ml-0 sm:mr-0">
-                <div className="grid grid-flow-col grid-rows-3 gap-14 sm:gap-5 2xl:gap-16">
-                  <section className="flex flex-wrap justify-start">
+                <div className="sm:hidden relative">
+                  <svg className='stroke-[#d1d1d1] stroke-[4px] absolute z-0' height="400">
+                    <line x1="100" y1="500" x2="100" y2="100"/>
+                    Sorry, your browser does not support inline SVG.
+                  </svg>
+                </div>
+                <div className="grid grid-flow-col grid-rows-3 gap-14 sm:gap-5 2xl:gap-16 relative sm:static z-10">
+                  <section className="flex flex-wrap justify-end sm:justify-start">
                     <div className="dropdown-hover dropdown dropdown-left z-50">
                       <label className="btn-detail btn btn-warning btn-xs text-2xs absolute bottom-2 left-2 z-10 uppercase shadow-md">
                         detail
@@ -192,7 +207,7 @@ const Home: NextPage = () => {
                       }}
                     />
                   </section>
-                  <section className="flex flex-wrap justify-start">
+                  <section className="flex flex-wrap justify-end sm:justify-start">
                     <div className="dropdown-hover dropdown dropdown-left">
                       <label className="btn-detail btn btn-warning btn-xs text-2xs absolute bottom-2 left-2 z-10 uppercase shadow-md">
                         detail
@@ -248,8 +263,10 @@ const Home: NextPage = () => {
                   />
                 </div>
               </div>
-
-
+              
+              
+              
+              <div className='hidden sm:block'>
                 <Xarrow
                   start="sec-grid"
                   end="sec-battery"
@@ -278,7 +295,8 @@ const Home: NextPage = () => {
                   endAnchor={{ position: 'bottom', offset: { x: 0.5 } }}
                   showHead={false}
                   showTail={false}
-                />
+                  />
+              </div>
                 
             </div>
             

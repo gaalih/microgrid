@@ -45,7 +45,7 @@ function Grid({ data }: GridProps) {
 
     <div
       id="sec-grid"
-      className="card-main shadow-embross card-compact card h-max w-auto p-3"
+      className="card-main shadow-embross card-compact card h-max w-auto p-3 bg-default"
     >
       <div className="flex justify-start gap-4">
         <div>

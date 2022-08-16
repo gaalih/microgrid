@@ -43,7 +43,7 @@ function Load({ data }: LoadProps) {
     //ver 02
     <div
       id="sec-load"
-      className="card-main card-compact shadow-embross card h-max w-auto p-3"
+      className="card-main card-compact shadow-embross card h-max w-auto p-3 bg-default"
     >
       <div className="flex justify-start gap-4">
         <div>

@@ -15,6 +15,10 @@ body {
   font-family: 'Albert Sans', sans-serif;
 }
 
+.bg-default{
+  @apply bg-[#ECF2F7];
+}
+
 /* .main-content .card-main { */
 /* @apply w-60 h-40 */
 /* @apply bg-[#ECF2F7]; */
