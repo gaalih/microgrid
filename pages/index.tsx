@@ -26,7 +26,7 @@ const Home: NextPage = () => {
   })
 
   return (
-    <div className="flex min-h-screen flex-col bg-[#ECF2F7]">
+    <div className="flex min-h-screen flex-col bg-[#ECF2F7] w-screen">
       <Head>
         <title>
           Microgrid Digital Twin - Lab. Energy Management, Engineering Physics,
