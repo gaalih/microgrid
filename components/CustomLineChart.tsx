@@ -29,7 +29,7 @@ function CustomLineChart({ data, label, unit, domain }: CustomLineChartProps) {
   return (
     <ResponsiveContainer>
       <LineChart
-        data={data}
+          data={data}
         style={{ fontFamily: 'Albert Sans' }}
         className="-ml-5 mt-2 p-0"
       >

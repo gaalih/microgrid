@@ -59,14 +59,16 @@ function Battery({ data }: BatteryProps) {
     >
       <div className="flex justify-start gap-4">
         <div>
-          <div className="card grid h-full w-24 place-content-center content-center bg-gradient-to-tl from-[#56CEBA] to-[#32CE75] p-3">
+        <a href="https://bms-v2-sigma.vercel.app/realtime">
+          <div className="card grid h-full w-24 place-content-center content-center bg-gradient-to-tl from-[#56CEBA] to-[#32CE75] p-3 hover:bg-gradient-to-tl hover:from-[#16a34a] hover:to-[#4ade80]">
             {/* <LightningBoltIcon className="h-auto w-16 text-slate-100" /> */}
-            <Image src={BatteryIcon} />
+            <Image src={BatteryIcon} className="hover:scale-110 transition duration-300 ease-in-out" />
           </div>
+        </a>
         </div>
         <div className="">
           <h1 className="text-blue-custom card-title pb-1 text-center text-sm font-bold">
-            Bess
+            BESS
           </h1>
           <div className="flex w-full gap-2">
             <Detail

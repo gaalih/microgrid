@@ -3,7 +3,7 @@ import Logo from '../assets/logo.svg';
 function Navbar() {
   return (
     <header className="px-6 py-3 text-xs">
-      <div className="container mx-auto text-blue-custom">
+      <div className="container 2xl:ml-10 mx-auto text-blue-custom">
         <div className="flex gap-2">
         <Image src={Logo} alt="Logo Lab" width={40}
       height={40}/>
