@@ -55,16 +55,18 @@ function Battery({ data }: BatteryProps) {
     //Ver 02
     <div
       id="sec-battery"
-      className="card-main shadow-embross card-compact card h-max w-auto p-3 bg-default"
+      className="sec-battery card-main shadow-embross card-compact bg-default card h-max w-auto p-3"
     >
       <div className="flex justify-start gap-4">
         <div>
-        <a href="https://bms-v2-sigma.vercel.app/realtime">
-          <div className="card grid h-full w-24 place-content-center content-center bg-gradient-to-tl from-[#56CEBA] to-[#32CE75] p-3 hover:bg-gradient-to-tl hover:from-[#16a34a] hover:to-[#4ade80]">
-            {/* <LightningBoltIcon className="h-auto w-16 text-slate-100" /> */}
-            <Image src={BatteryIcon} className="hover:scale-110 transition duration-300 ease-in-out" />
-          </div>
-        </a>
+          <a href="https://bms-v2-sigma.vercel.app/realtime">
+            <div className="card grid h-full w-24 place-content-center content-center bg-gradient-to-tl from-[#56CEBA] to-[#32CE75] p-3 hover:bg-gradient-to-tl hover:from-[#16a34a] hover:to-[#4ade80]">
+              <Image
+                src={BatteryIcon}
+                className="transition duration-300 ease-in-out hover:scale-110"
+              />
+            </div>
+          </a>
         </div>
         <div className="">
           <h1 className="text-blue-custom card-title pb-1 text-center text-sm font-bold">
@@ -83,7 +85,6 @@ function Battery({ data }: BatteryProps) {
           </div>
         </div>
       </div>
-      {/* <button className="btn-detail absolute bottom-2 left-2 btn btn-xs btn-warning uppercase text-2xs shadow-md">Detail</button> */}
     </div>
 
     // end ver 02

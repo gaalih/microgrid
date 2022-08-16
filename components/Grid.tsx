@@ -45,12 +45,11 @@ function Grid({ data }: GridProps) {
 
     <div
       id="sec-grid"
-      className="card-main shadow-embross card-compact card h-max w-auto p-3 bg-default"
+      className="sec-grid card-main shadow-embross card-compact bg-default card h-max w-auto p-3"
     >
       <div className="flex justify-start gap-4">
         <div>
           <h1 className="card-title pb-1 text-center text-sm">Grid</h1>
-          {/* <Detail data={data} label={gridLabel} className="text-xs" /> */}
           <Detail
             data={{
               pactive: data.pactive,
@@ -66,8 +65,6 @@ function Grid({ data }: GridProps) {
           </div>
         </div>
       </div>
-
-      {/* <button className="btn-detail absolute bottom-2 right-2 btn btn-xs btn-warning uppercase text-2xs shadow-md">Detail</button> */}
     </div>
 
     // end ver02

@@ -1,9 +1,10 @@
 function Footer() {
   return (
-    <footer className="-mt-8 absolute z-0 bottom-5 px-6 pb-2 text-2xs sm:text-sm text-blue-custom mb-5 sm:mb-0">
-      <div className="container 2xl:ml-10 mx-auto">
+    // <footer className="-mt-">
+    <footer className="text-blue-custom text-2xs bottom-5 z-0 -mt-8 mb-5 px-6 pb-1 sm:absolute sm:mb-0 sm:text-sm">
+      <div className="container mx-auto 2xl:ml-10">
         Developed by{' '}
-        <div className="font-medium">
+        <div className="font-medium text-xs">
           Lab. Energy Management, Engineering Physics, ITB
         </div>
       </div>

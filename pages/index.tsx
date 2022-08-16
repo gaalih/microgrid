@@ -1,4 +1,7 @@
 import type { NextPage } from 'next'
+import Image from 'next/image'
+import LinePhone from '../assets/line_phone.svg'
+
 import Head from 'next/head'
 import Xarrow from 'react-xarrows'
 
@@ -26,7 +29,7 @@ const Home: NextPage = () => {
   })
 
   return (
-    <div className="flex min-h-screen flex-col bg-[#ECF2F7] w-screen">
+    <div className="flex min-h-screen flex-col bg-[#ECF2F7]">
       <Head>
         <title>
           Microgrid Digital Twin - Lab. Energy Management, Engineering Physics,
@@ -37,10 +40,9 @@ const Home: NextPage = () => {
 
       <Navbar />
       {
-        <main className="main-content mx-0 sm:mx-10 mb-1 h-full pt-2 scale-90 sm:scale-100">
-          
+        <main className="main-content mx-0 h-full scale-90 pt-2 sm:mx-10 sm:scale-100">
           {status === 'loading' && (
-            <div className="my-44 mb-96 sm:mb-80 grid h-auto grid-cols-12 place-content-center gap-4">
+            <div className="my-44 mb-96 grid h-auto grid-cols-12 place-content-center gap-4 sm:mb-80">
               <div className="col-span-3 sm:col-span-5"></div>
               <div className="col-span-6 sm:col-span-2">
                 <progress className="progress h-5 w-full"></progress>
@@ -50,9 +52,9 @@ const Home: NextPage = () => {
             </div>
           )}
           {status === 'error' && (
-            <div className="my-44 mb-64 sm:mb-64 grid h-auto grid-cols-12 place-content-center gap-4">
+            <div className="my-44 mb-64 grid h-auto grid-cols-12 place-content-center gap-4 sm:mb-64">
               <div className="col-span-3 sm:col-span-5"></div>
-              <div className="col-span-6 sm:col-span-2 animate-fadeIn">
+              <div className="col-span-6 animate-fadeIn sm:col-span-2">
                 <div className="flex justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -81,20 +83,12 @@ const Home: NextPage = () => {
             </div>
           )}
           {data && (
-            <div className="grid animate-fadeIn grid-cols-2 sm:grid-cols-3 gap-0 sm:gap-10 2xl:gap-16 scale-90 sm:scale-100 -mt-24 sm:-mt-0 2xl:mt-16 2xl:mx-10 w-screen">
+            <div className="-mt-24 grid scale-90 animate-fadeIn grid-cols-2 gap-0 sm:-mt-0 sm:scale-100 sm:grid-cols-3 sm:gap-10 2xl:mx-10 2xl:mt-16 2xl:gap-16">
               <div className="left-column -ml-5 mr-5 sm:mr-0 sm:ml-0">
-                
-                {/* <div className="sm:hidden relative">
-                  <svg className="stroke-[#d1d1d1] stroke-[4px] absolute z-0 w-screen">
-                    <line x1="60" y1="60" x2="600" y2="60"/>
-                    Sorry, your browser does not support inline SVG.
-                  </svg>
-                </div> */}
-
-                <div className="grid grid-flow-col grid-rows-3 gap-14 sm:gap-4 2xl:gap-16 relative sm:static z-10">
+                <div className="relative z-10 grid grid-flow-col grid-rows-3 gap-14 sm:static sm:gap-4 2xl:gap-16">
                   <section className="h-100 flex flex-wrap">
                     <Grid data={data.grid} />
-                    <div className="dropdown-hover dropdown">
+                    <div className="dropdown-hover dropdown dropdown-left bg-base-100">
                       <label className="btn-detail btn btn-warning btn-xs text-2xs absolute bottom-2 right-2 uppercase shadow-md">
                         detail
                       </label>
@@ -122,17 +116,10 @@ const Home: NextPage = () => {
                 </div>
               </div>
 
-
               <div className="center-column -mr-5 ml-5 sm:ml-0 sm:mr-0">
-                {/* <div className="sm:hidden relative">
-                  <svg className='stroke-[#d1d1d1] stroke-[4px] absolute z-0' height="400">
-                    <line x1="100" y1="500" x2="100" y2="100"/>
-                    Sorry, your browser does not support inline SVG.
-                  </svg>
-                </div> */}
-                <div className="grid grid-flow-col grid-rows-3 gap-14 sm:gap-5 2xl:gap-16 relative sm:static z-10">
+                <div className="relative z-10 grid grid-flow-col grid-rows-3 gap-14 sm:static sm:gap-5 2xl:gap-16">
                   <section className="flex flex-wrap justify-end sm:justify-start">
-                    <div className="dropdown-hover dropdown dropdown-left z-50">
+                    <div className="dropdown-hover dropdown dropdown-left bg-base-100">
                       <label className="btn-detail btn btn-warning btn-xs text-2xs absolute bottom-2 left-2 z-10 uppercase shadow-md">
                         detail
                       </label>
@@ -175,10 +162,9 @@ const Home: NextPage = () => {
                         current: data.battery.current,
                       }}
                     />
-
                   </section>
                   <section className="flex flex-wrap justify-end">
-                    <div className="dropdown-hover dropdown dropdown-left">
+                    <div className="dropdown-hover dropdown dropdown-left bg-base-100">
                       <label className="btn-detail btn btn-warning btn-xs text-2xs absolute bottom-2 left-2 z-10 uppercase shadow-md">
                         detail
                       </label>
@@ -208,7 +194,7 @@ const Home: NextPage = () => {
                     />
                   </section>
                   <section className="flex flex-wrap justify-end sm:justify-start">
-                    <div className="dropdown-hover dropdown dropdown-left">
+                    <div className="dropdown-hover dropdown dropdown-left bg-base-100">
                       <label className="btn-detail btn btn-warning btn-xs text-2xs absolute bottom-2 left-2 z-10 uppercase shadow-md">
                         detail
                       </label>
@@ -237,8 +223,8 @@ const Home: NextPage = () => {
                   </section>
                 </div>
               </div>
-              <div className="right-column col-span-2 sm:col-span-1 -mx-5 sm:-mx-0 mt-10 sm:mt-0">
-                <div className="shadow-embross card-compact card mb-10 sm:mb-4 2xl:mb-10 flex h-40 justify-center p-3">
+              <div className="right-column col-span-2 -mx-5 mt-10 sm:col-span-1 sm:-mx-0 sm:mt-0">
+                <div className="shadow-embross card-compact card mb-10 flex h-40 justify-center p-3 sm:mb-4 2xl:mb-10">
                   <CustomLineChart
                     data={data.battery.soc_data}
                     label="SoC"
@@ -246,7 +232,7 @@ const Home: NextPage = () => {
                     domain={[0, 100]}
                   />
                 </div>
-                <div className="shadow-embross card-compact card my-10 sm:my-4 2xl:my-10 h-40 p-3">
+                <div className="shadow-embross card-compact card my-10 h-40 p-3 sm:my-4 2xl:my-10">
                   <CustomLineChart
                     data={data.pv.pv_production}
                     label="PV Production"
@@ -254,7 +240,7 @@ const Home: NextPage = () => {
                     domain={[0, 'auto']}
                   />
                 </div>
-                <div className="shadow-embross card-compact card mt-10 sm:mt-4 2xl:mt-10 h-40 p-3">
+                <div className="shadow-embross card-compact card mt-10 h-40 p-3 sm:mt-4 2xl:mt-10">
                   <CustomLineChart
                     data={data.load.electricity_load}
                     label="Electricity Load"
@@ -263,10 +249,11 @@ const Home: NextPage = () => {
                   />
                 </div>
               </div>
-              
-              
-              
-              <div className='hidden sm:block'>
+
+              <div className="absolute z-0 sm:hidden">
+                <Image src={LinePhone} layout="fixed" />
+              </div>
+              <div className="hidden sm:block">
                 <Xarrow
                   start="sec-grid"
                   end="sec-battery"
@@ -295,15 +282,13 @@ const Home: NextPage = () => {
                   endAnchor={{ position: 'bottom', offset: { x: 0.5 } }}
                   showHead={false}
                   showTail={false}
-                  />
+                />
               </div>
-                
             </div>
-            
           )}
         </main>
       }
-      <Footer/>
+      <Footer />
     </div>
   )
 }

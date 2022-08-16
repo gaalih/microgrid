@@ -47,12 +47,11 @@ function Pv({ data }: PvProps) {
     //ver 02
     <div
       id="sec-pv"
-      className="card-main card-compact shadow-embross card h-max w-auto p-3 bg-default"
+      className="card-main card-compact shadow-embross bg-default card h-max w-auto p-3"
     >
       <div className="flex justify-start gap-4">
         <div>
           <div className="card grid h-full w-24 place-content-center content-center bg-gradient-to-tl from-[#ff5e62] to-[#ff9966] p-3">
-            {/* <DesktopComputerIcon className="text-slate-100 w-16 h-auto"/> */}
             <Image src={PvIcon} />
           </div>
         </div>

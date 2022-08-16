@@ -48,7 +48,6 @@ function Load({ data }: LoadProps) {
       <div className="flex justify-start gap-4">
         <div>
           <div className="card grid h-full w-24 place-content-center content-center bg-gradient-to-tl from-[#1B93FF] to-[#34C0FE] p-3">
-            {/* <HomeIcon className="text-slate-100 w-16 h-auto"/> */}
             <Image src={LoadIcon} />
           </div>
         </div>

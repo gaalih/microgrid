@@ -14,7 +14,7 @@ type WeatherStationProps = {
 function WeatherStation({ data }: WeatherStationProps) {
   return (
     //ver 02
-    <div className="card-main shadow-embross card card-compact h-max w-auto p-3">
+    <div className="card-main shadow-embross card-compact card h-max w-auto p-3">
       <div className="flex justify-start gap-4">
         <div>
           <h1 className="text-blue-custom pb-1 text-center text-sm font-bold">
@@ -23,15 +23,8 @@ function WeatherStation({ data }: WeatherStationProps) {
           <Detail data={data} label={weatherStationLabel} className="text-xs" />
         </div>
         <div>
-          {/* <div className="card grid h-full w-24 place-content-center content-center p-3"> */}
           <div className="card grid h-full w-24 place-content-center content-center bg-gradient-to-tl from-[#FF9051] to-[#FBD560] p-3">
-            {/* <SunIcon className="text-slate-100 w-16 h-auto" /> */}
-            <Image
-              src={LogoWS}
-              // layout="fill"
-              // width={250}
-              // height={250}
-            />
+            <Image src={LogoWS} />
           </div>
         </div>
       </div>

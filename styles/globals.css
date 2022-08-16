@@ -15,7 +15,7 @@ body {
   font-family: 'Albert Sans', sans-serif;
 }
 
-.bg-default{
+.bg-default {
   @apply bg-[#ECF2F7];
 }
 
