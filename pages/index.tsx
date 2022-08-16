@@ -81,7 +81,7 @@ const Home: NextPage = () => {
             </div>
           )}
           {data && (
-            <div className="grid animate-fadeIn grid-cols-2 sm:grid-cols-3 gap-0 sm:gap-10 2xl:gap-16 scale-90 sm:scale-100 -mt-24 sm:-mt-0 2xl:mt-16 2xl:mx-10">
+            <div className="grid animate-fadeIn grid-cols-2 sm:grid-cols-3 gap-0 sm:gap-10 2xl:gap-16 scale-90 sm:scale-100 -mt-24 sm:-mt-0 2xl:mt-16 2xl:mx-10 w-screen">
               <div className="left-column -ml-5 mr-5 sm:mr-0 sm:ml-0">
                 
                 <div className="sm:hidden relative">
