@@ -85,7 +85,7 @@ const Home: NextPage = () => {
               <div className="left-column -ml-5 mr-5 sm:mr-0 sm:ml-0">
                 
                 <div className="sm:hidden relative">
-                  <svg className='stroke-[#d1d1d1] stroke-[4px] absolute z-0'>
+                  <svg className="stroke-[#d1d1d1] stroke-[4px] absolute z-0 w-screen">
                     <line x1="60" y1="60" x2="600" y2="60"/>
                     Sorry, your browser does not support inline SVG.
                   </svg>
