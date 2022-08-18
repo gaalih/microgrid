@@ -88,7 +88,7 @@ const Home: NextPage = () => {
                 <div className="relative z-10 grid grid-flow-col grid-rows-3 gap-14 sm:static sm:gap-4 2xl:gap-16">
                   <section className="h-100 flex flex-wrap">
                     <Grid data={data.grid} />
-                    <div className="dropdown-hover dropdown dropdown-left bg-base-100">
+                    <div className="dropdown-hover dropdown dropdown-left sm:dropdown-right bg-base-100">
                       <label className="btn-detail btn btn-warning btn-xs text-2xs absolute bottom-2 right-2 uppercase shadow-md">
                         detail
                       </label>
