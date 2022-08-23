@@ -1,5 +1,4 @@
 import { Data } from './variables'
-import dataJson from '../components/microgrid2.json'
 
 export function classNames(classes: string[]) {
   return classes.filter(Boolean).join(' ')
@@ -18,12 +17,10 @@ export function capitalize(text: string) {
 }
 
 export async function fetchData() {
-  // const response = await fetch(process.env.NEXT_PUBLIC_API_URL!)
-  // if (!response.ok) {
-  //   throw new Error(response.statusText)
-  // }
-  // const data = (await response.json()) as Data
-  // return data
-  const data = dataJson as Data
+  const response = await fetch(process.env.NEXT_PUBLIC_API_URL!)
+  if (!response.ok) {
+    throw new Error(response.statusText)
+  }
+  const data = (await response.json()) as Data
   return data
 }
